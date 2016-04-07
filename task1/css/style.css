@@ -1,0 +1,25 @@
+﻿.header {
+    height: 10vh;
+    background-color: #cff;
+}
+
+.main {
+    min-width: 600px;
+    white-space: nowrap;
+}
+
+.left, .center, .right {
+    display: inline-block;
+}
+
+.left, .right {
+    width: 7vw;
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+.center {
+    width: 85vw;
+    height: 100vh;
+    background-color: green;
+}
