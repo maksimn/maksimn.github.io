@@ -1,11 +1,18 @@
-﻿.header {
-    height: 10vh;
-    background-color: #cff;
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+.tvprogheader {
+    font-size: 1.4em;
+    padding: 5px;
+}
+
+.header {
+    height: 50px;
 }
 
 .main {
-    min-width: 600px;
-    white-space: nowrap;
+    min-width: 400px;
 }
 
 .left, .center, .right {
@@ -13,13 +20,45 @@
 }
 
 .left, .right {
-    width: 7vw;
-    background-color: antiquewhite;
-    height: 100vh;
+    width: 6%;
 }
 
 .center {
-    width: 85vw;
-    height: 100vh;
-    background-color: green;
+    width: 86%;
+    border: 1px solid lightgrey;
+}
+
+.dayname {
+    display: inline-block;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.channelogo {
+    display: inline-block;
+}
+
+.channelname {
+    display: inline-block;
+}
+
+.channelheader {
+    padding: 5px;
+    margin: 5px;
+}
+
+.starttime {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.progname {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+.channelcontent {
+    display: inline-block;
+    vertical-align: top;
 }
