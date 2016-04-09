@@ -34,6 +34,8 @@
 
 .channelname {
     display: inline-block;
+    vertical-align: top;
+    margin: 8px 0 0 6px;
 }
 
 .channelheader {
@@ -44,6 +46,9 @@
 .starttime {
     display: inline-block;
     vertical-align: top;
+    color: #393939;
+    font-weight: 600;
+    margin-right: 5px;
 }
 
 .progname {
@@ -62,4 +67,17 @@
     font-weight: 600;
     color: #1f1f2e;
     padding: 10px;
+    margin-top: 10px;
+}
+
+.progline {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+}
+
+.progline:hover:after {
+    content: 'программа';
+    position: absolute;
+    background-color: #f5f7f0;
+    padding: 5px;
 }
