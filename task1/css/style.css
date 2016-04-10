@@ -1,48 +1,38 @@
 ﻿body {
     font-family: Arial, sans-serif;
 }
-
 .tvprogheader {
     font-size: 1.4em;
     padding: 5px;
+    margin: 5px 0 5px 0;
 }
-
 .header {
     height: 50px;
 }
-
 .main {
     min-width: 400px;
 }
-
 .left, .center, .right {
     display: inline-block;
 }
-
 .left, .right {
     width: 6%;
 }
-
 .center {
     width: 86%;
-    border: 1px solid lightgrey;
 }
-
 .channelogo {
     display: inline-block;
 }
-
 .channelname {
     display: inline-block;
     vertical-align: top;
     margin: 8px 0 0 6px;
 }
-
 .channelheader {
     padding: 5px;
     margin: 5px;
 }
-
 .starttime {
     display: inline-block;
     vertical-align: top;
@@ -50,34 +40,47 @@
     font-weight: 600;
     margin-right: 5px;
 }
-
 .progname {
     display: inline-block;
     width: 300px;
     vertical-align: top;
 }
-
 .channelcontent {
     display: inline-block;
     vertical-align: top;
 }
-
 .dayofweek {
     font-size: 1.1em;
     font-weight: 600;
     color: #1f1f2e;
     padding: 10px;
-    margin-top: 10px;
 }
-
 .progline {
     font-size: 0.9em;
     margin-bottom: 3px;
+    position: relative;
 }
-
 .progline:hover:after {
-    content: 'программа';
+    content: attr(data-attr);
     position: absolute;
+    top: -20px;
+    left: 250px;
     background-color: #f5f7f0;
     padding: 5px;
+    border: 1px solid #808080;
+}
+.daycontent {
+    border-top: 1px solid red;
+    margin-bottom: 10px;
+}
+input.rb_tvseries:checked ~ .tvprogbody .progline:not([data-attr="Телесериал"]), 
+input.rb_movie:checked ~ .tvprogbody .progline:not([data-attr="Фильм"]), 
+input.rb_sport:checked ~ .tvprogbody .progline:not([data-attr="Спорт"]) {
+    visibility: hidden;
+} 
+input.rb_all:checked ~ .tvprogbody .progline,
+input.rb_tvseries:checked ~ .tvprogbody .progline[data-attr="Телесериал"],
+input.rb_movie:checked ~ .tvprogbody .progline[data-attr="Фильм"],
+input.rb_sport:checked ~ .tvprogbody .progline[data-attr="Спорт"] {
+    visibility: visible;
 }
