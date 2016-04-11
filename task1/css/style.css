@@ -9,9 +9,6 @@
 .header {
     height: 50px;
 }
-.main {
-    min-width: 400px;
-}
 .left, .center, .right {
     display: inline-block;
 }
@@ -39,6 +36,7 @@
     color: #393939;
     font-weight: 600;
     margin-right: 5px;
+    width: 33px;
 }
 .progname {
     display: inline-block;
@@ -83,4 +81,29 @@ input.rb_tvseries:checked ~ .tvprogbody .progline[data-attr="Телесериа�
 input.rb_movie:checked ~ .tvprogbody .progline[data-attr="Фильм"],
 input.rb_sport:checked ~ .tvprogbody .progline[data-attr="Спорт"] {
     visibility: visible;
+}
+.tvprog {
+    padding-left: 5px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .header {
+       height: 10px;
+    }
+    .left, .right {
+       width: 0%;
+    }
+    .center {
+       width: 100%;
+    }
+    .progname {
+        width: 75%;
+    }
+    label {
+        font-size: 0.9em;
+    }
+    .progline:hover:after {
+       left: 67%;
+    }
 }
