@@ -29,3 +29,19 @@
     assert(team.name == 'team2');
 })();
 
+(function () {
+    console.log('team addStudent() test 1:');
+
+    var shri = new SHRI(); // Arrange
+    shri.createTeam("Group2016-1");
+
+    var team = shri.getTeam("Group2016-1");
+    team.addStudent(new Student("Иванов Иван")); // Act
+    team.addStudent(new Student("Петров Иннокентий"));
+    team.addStudent(new Student("Сазонов Павел"));
+
+    assert(team.students.some(function (s) { return s.name == "Иванов Иван" })); // Assert
+    assert(team.students.some(function (s) { return s.name == "Петров Иннокентий" }));
+    assert(team.students.some(function (s) { return s.name == "Сазонов Павел" }));
+    assert(team.students.length == 3);
+})();
