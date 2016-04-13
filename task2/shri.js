@@ -19,15 +19,59 @@
     return shri;
 })();
 
-function Student(name) {
+// Subject Base Class //////////////////////////////////////////
+function Subject(name) {
     this.name = name;
+    this.tasks = [];
 }
 
+Subject.prototype.createTask = function (name) {
+    this.tasks.push(new Task(name));
+}
+
+Subject.prototype.getTask = function (name) {
+    for (var i = 0; i < this.tasks.length; i++) {
+        if (this.tasks[i].name == name) {
+            return this.tasks[i];
+        }
+    }
+    return null;
+}
+
+Subject.prototype.setGradeForTask = function (name, value) {
+    var task = this.getTask(name);
+    task.grade = value;
+}
+
+// class Student : Subject ///////////////////////////////////// 
+function Student(name) {
+    Subject.apply(this, arguments);
+}
+
+Student.prototype = new Subject();
+Student.prototype.constructor = Student;
+
+// class Team : Subject ////////////////////////////////////////
 function Team(name) {
-    this.name = name;
+    Subject.apply(this, arguments);
     this.students = [];
 }
 
+Team.prototype = new Subject();
+Team.prototype.constructor = Team;
+
 Team.prototype.addStudent = function (student) {
     this.students.push(student);
+}
+
+// class Task ///////////////////////////////////////////////////
+function Task(name) {
+    this.name = name;
+    this.grade = undefined;
+}
+
+// class Mentor
+function Mentor(name) {
+    this.name = name;
+    this.prioritizedStudents;
 }
