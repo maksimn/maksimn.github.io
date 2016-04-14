@@ -14,6 +14,51 @@
         return new Mentor(name);
     }
 
+    // Критерий распределения:
+    // К данному ментору могут попасть только студенты из его списка.
+    // Кроме того, этот ментор должен присутствовать в списке у студентов из своего списка и 
+    // иметь больший приоритет, чем другие менторы.
+    shri.prototype.distribute = function (mentors) {
+        prepareForDistribution(mentors);
+        var results = [];
+        while(!isDistributionFinished(mentors)) {
+            for (var i = 0; i < mentors.length; i++) {
+                for (var j = 0; j < mentors[i].prioritizedStudents.length; j++) {
+                    var student = mentors[i].prioritizedStudents[j].student;
+                    if (isMentorMostPrioritizedForStudent(mentors[i], student)) {
+                        disributeToResults(results, mentors, i, student);
+                    }
+                }
+            }
+        }
+    }
+
+    function isDistributionFinished(mentors) {
+
+    }
+
+    function isMentorMostPrioritizedForStudent(mentor, student) {
+
+    }
+
+    function disributeToResults(results, mentors, i, student) {
+
+    }
+
+    function prepareForDistribution(mentors) {
+        for (var i = 0; i < mentors.length; i++) {
+            var studPriority = mentors[i].prioritizedStudents;
+            studPriority.sort(prioritySort);
+            for (var j = 0; j < studPriority.length; j++) {
+                studPriority[j].student.prioritizedMentors.sort(prioritySort);
+            }
+        }
+    }
+
+    function prioritySort(ps1, ps2) {
+        return ps2.priority - ps1.priority;
+    }
+
     // Subject Base Class //////////////////////////////////////////
     function Subject(name) {
         this.name = name;
@@ -88,9 +133,18 @@
         _setPriority(this.prioritizedStudents, "student", studentName, value);
     }
 
+    // Auxiliary functions
     function _setPriority(array, prop, name, value) {
-        var elem = array.filter(function (x) { return x[prop].name == name; })[0];
+        var elem = find(array, function (x) { return x[prop].name == name; }, {});
         elem.priority = value;
+    }
+
+    function find(arr, predicate, ctx) {
+        var result = null;
+        arr.some(function (el, i) {
+            return predicate.call(ctx, el, i, arr) ? ((result = el), true) : false;
+        });
+        return result;
     }
 
     return shri;

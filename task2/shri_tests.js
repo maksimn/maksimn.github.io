@@ -95,3 +95,39 @@
 
     assert(student.prioritizedMentors.some(function (pm) { return pm.mentor.name == "C" && pm.priority == 55; }));
 })();
+
+(function () {
+    console.log("Student distribution between mentors, test");
+    var shri = new SHRI();
+    var mentor1 = shri.createMentor("A");
+    var mentor2 = shri.createMentor("B");
+    var student1 = shri.createStudent("a");
+    var student2 = shri.createStudent("b");
+    var student3 = shri.createStudent("c");
+
+    mentor1.addStudent(student3);
+    mentor1.setPriorityForStudent(student3.name, 4);
+    mentor1.addStudent(student2);
+    mentor1.setPriorityForStudent(student2.name, 9);
+    mentor2.addStudent(student2);
+    mentor2.setPriorityForStudent(student2.name, 8);
+    mentor2.addStudent(student3);
+    mentor2.setPriorityForStudent(student3.name, 5);
+    mentor2.addStudent(student1);
+    mentor2.setPriorityForStudent(student1.name, 4);
+
+    student1.addMentor(mentor1);
+    student1.addMentor(mentor2);
+    student2.addMentor(mentor1);
+    student2.addMentor(mentor2);
+    student3.addMentor(mentor1);
+    student3.addMentor(mentor2);
+    student1.setPriorityForMentor(mentor1.name, 1);
+    student1.setPriorityForMentor(mentor2.name, 2);
+    student2.setPriorityForMentor(mentor1.name, 1);
+    student2.setPriorityForMentor(mentor2.name, 2);
+    student3.setPriorityForMentor(mentor1.name, 2);
+    student3.setPriorityForMentor(mentor2.name, 1);
+
+    var result = shri.distribute([mentor1, mentor2]);
+})();
