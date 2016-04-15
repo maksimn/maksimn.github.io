@@ -26,31 +26,66 @@
                 for (var j = 0; j < mentors[i].prioritizedStudents.length; j++) {
                     var student = mentors[i].prioritizedStudents[j].student;
                     if (isMentorMostPrioritizedForStudent(mentors[i], student)) {
-                        disributeToResults(results, mentors, i, student);
+                        distributeToResults(results, mentors, i, student);
+                    }
+                }
+            }
+        }
+        return results;
+    }
+
+    function isDistributionFinished(mentors) {
+        for (var i = 0; i < mentors.length; i++) {
+            if (mentors[i].prioritizedStudents.length > 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function isMentorMostPrioritizedForStudent(mentor, student) {
+        if(student.prioritizedMentors.length > 0) {
+            return student.prioritizedMentors[0].mentor.name == mentor.name;
+        }
+        return false;
+    }
+
+    function distributeToResults(results, mentors, i, student) {
+        // Если results пуст, то нужно добавить в него данного ментора и его студента
+        if (results.length == 0) {
+            results.push(new Mentor(mentors[i].name));
+            results[0].prioritizedStudents.push(new Student(student.name));
+            // И нужно удалить все записи о данном студенте из подмассивов массива mentors
+            for (var j = 0; j < mentors.length; j++) {
+                for (var k = 0; k < mentors[j].prioritizedStudents.length; k++) {
+                    if(mentors[j].prioritizedStudents[k].student.name == student.name) {
+                        mentors[j].prioritizedStudents.splice(k, 1);
+                    }
+                }                
+            }
+        }
+        // Ecли массив не пуст, проверяем, есть ли ментор с данным именем в массиве results?
+        else if (results.some(function (m) { return m.name == mentors[i].name; })) {
+            // если да, то распределяем к этому ментору этого студента
+            var ment = find(results, function (m) { return m.name == mentors[i].name; }, {});
+            ment.prioritizedStudents.push(new Student(student.name));
+            // И нужно удалить все записи о данном студенте из подмассивов массива mentors
+            for (var j = 0; j < mentors.length; j++) {
+                for (var k = 0; k < mentors[j].prioritizedStudents.length; k++) {
+                    if (mentors[j].prioritizedStudents[k].student.name == student.name) {
+                        mentors[j].prioritizedStudents.splice(k, 1);
                     }
                 }
             }
         }
     }
 
-    function isDistributionFinished(mentors) {
-
-    }
-
-    function isMentorMostPrioritizedForStudent(mentor, student) {
-
-    }
-
-    function disributeToResults(results, mentors, i, student) {
-
-    }
-
     function prepareForDistribution(mentors) {
         for (var i = 0; i < mentors.length; i++) {
-            var studPriority = mentors[i].prioritizedStudents;
-            studPriority.sort(prioritySort);
-            for (var j = 0; j < studPriority.length; j++) {
-                studPriority[j].student.prioritizedMentors.sort(prioritySort);
+            var studwithPriority = mentors[i].prioritizedStudents;
+            studwithPriority.sort(prioritySort);
+            for (var j = 0; j < studwithPriority.length; j++) {
+                studwithPriority[j].student.prioritizedMentors.sort(prioritySort);
             }
         }
     }
