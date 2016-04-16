@@ -130,4 +130,8 @@
     student3.setPriorityForMentor(mentor2.name, 1);
 
     var result = shri.distribute([mentor1, mentor2]);
+    
+    assert(result[0].studnames.some(function (x) { return x == "c"; })
+           && result[1].studnames.some(function (x) { return x == "a"; })
+           && result[1].studnames.some(function (x) { return x == "b"; }));
 })();
