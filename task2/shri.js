@@ -15,83 +15,56 @@
     }
 
     // Критерий распределения:
-    // К данному ментору могут попасть только студенты из его списка.
-    // Кроме того, этот ментор должен присутствовать в списке у студентов из своего списка и 
-    // иметь больший приоритет, чем другие менторы.
+    // При распределении студент может быть приписан только к одному ментору.
+    // Один ментор может взять нескольких студентов.
+    // Студент может быть распределен к ментору, только если он есть в списке у этого ментора.
+    // При этом условии он распределяется к самому приоритетному ментору из своего списка.
     shri.prototype.distribute = function (mentors) {
-        prepareForDistribution(mentors);
-        var results = [];
-        while(!isDistributionFinished(mentors)) {
+        function prepareForDistribution() {
+            for (var i = 0; i < mentors.length; i++) {
+                var studwithPriority = mentors[i].prioritizedStudents;
+                studwithPriority.sort(prioritySort);
+                for (var j = 0; j < studwithPriority.length; j++) {
+                    studwithPriority[j].student.prioritizedMentors.sort(prioritySort);
+                }
+            }
+        }
+        function prioritySort(ps1, ps2) {
+            return ps2.priority - ps1.priority;
+        }
+        function getStudents() {
             for (var i = 0; i < mentors.length; i++) {
                 for (var j = 0; j < mentors[i].prioritizedStudents.length; j++) {
                     var student = mentors[i].prioritizedStudents[j].student;
-                    if (isMentorMostPrioritizedForStudent(mentors[i], student)) {
-                        distributeToResults(results, mentors, i, student);
+                    if (!students.some(function (s) { return s.name == student.name; })) {
+                        students.push(student);
                     }
                 }
             }
         }
+        function initResultsArray() {
+            for (var i = 0; i < mentors.length; i++) {
+                results.push({ mentorname: mentors[i].name, studnames: [] });
+            }
+        }
+        function distribution() {
+            for (var i = 0; i < students.length; i++) {
+                for (var j = 0; j < students[i].prioritizedMentors.length; j++) {
+                    var mentor = students[i].prioritizedMentors[j].mentor;
+                    if (mentor.prioritizedStudents.some(function (ps) { return ps.student.name == students[i].name; })) {
+                        var theSameMentorInResults = find(results, function (m) { return m.mentorname == mentor.name; }, {});
+                        theSameMentorInResults.studnames.push(students[i].name);
+                        break;
+                    }
+                }
+            }
+        }
+        var students = [], results = [];
+        prepareForDistribution();
+        getStudents();
+        initResultsArray();
+        distribution();
         return results;
-    }
-
-    function isDistributionFinished(mentors) {
-        for (var i = 0; i < mentors.length; i++) {
-            if (mentors[i].prioritizedStudents.length > 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    function isMentorMostPrioritizedForStudent(mentor, student) {
-        if(student.prioritizedMentors.length > 0) {
-            return student.prioritizedMentors[0].mentor.name == mentor.name;
-        }
-        return false;
-    }
-
-    function distributeToResults(results, mentors, i, student) {
-        // Если results пуст, то нужно добавить в него данного ментора и его студента
-        if (results.length == 0) {
-            results.push(new Mentor(mentors[i].name));
-            results[0].prioritizedStudents.push(new Student(student.name));
-            // И нужно удалить все записи о данном студенте из подмассивов массива mentors
-            for (var j = 0; j < mentors.length; j++) {
-                for (var k = 0; k < mentors[j].prioritizedStudents.length; k++) {
-                    if(mentors[j].prioritizedStudents[k].student.name == student.name) {
-                        mentors[j].prioritizedStudents.splice(k, 1);
-                    }
-                }                
-            }
-        }
-        // Ecли массив не пуст, проверяем, есть ли ментор с данным именем в массиве results?
-        else if (results.some(function (m) { return m.name == mentors[i].name; })) {
-            // если да, то распределяем к этому ментору этого студента
-            var ment = find(results, function (m) { return m.name == mentors[i].name; }, {});
-            ment.prioritizedStudents.push(new Student(student.name));
-            // И нужно удалить все записи о данном студенте из подмассивов массива mentors
-            for (var j = 0; j < mentors.length; j++) {
-                for (var k = 0; k < mentors[j].prioritizedStudents.length; k++) {
-                    if (mentors[j].prioritizedStudents[k].student.name == student.name) {
-                        mentors[j].prioritizedStudents.splice(k, 1);
-                    }
-                }
-            }
-        }
-    }
-
-    function prepareForDistribution(mentors) {
-        for (var i = 0; i < mentors.length; i++) {
-            var studwithPriority = mentors[i].prioritizedStudents;
-            studwithPriority.sort(prioritySort);
-            for (var j = 0; j < studwithPriority.length; j++) {
-                studwithPriority[j].student.prioritizedMentors.sort(prioritySort);
-            }
-        }
-    }
-
-    function prioritySort(ps1, ps2) {
-        return ps2.priority - ps1.priority;
     }
 
     // Subject Base Class //////////////////////////////////////////
@@ -168,7 +141,7 @@
         _setPriority(this.prioritizedStudents, "student", studentName, value);
     }
 
-    // Auxiliary functions
+    // Auxiliary functions ////////////////////////////////////////////
     function _setPriority(array, prop, name, value) {
         var elem = find(array, function (x) { return x[prop].name == name; }, {});
         elem.priority = value;
