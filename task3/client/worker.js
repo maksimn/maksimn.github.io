@@ -24,12 +24,7 @@ self.addEventListener('fetch', function(event) {
     }
 
     if (/^\/api\/v1/.test(requestURL.pathname)) {
-        return event.respondWith(
-            Promise.race([
-                fetchAndPutToCache(event.request),
-                getFromCache(event.request)
-            ])
-        );
+        return event.respondWith(fetchAndPutToCache(event.request));
     }
 
     return event.respondWith(

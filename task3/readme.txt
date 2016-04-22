@@ -51,4 +51,22 @@ navigator.serviceWorker.register('/js/worker.js').then(function (reg) {
 ---------------------------------------------------------------------------------------------------
 
 Баг обновления при добавлении очевидным образом связан с тем, как закодирован ServiceWorker и его 
-работа с кэшем.
+работа с кэшем, а именно обработка события fetch. 
+
+Наиболее подозрительно выглядят строки
+
+if (/^\/api\/v1/.test(requestURL.pathname)) {
+   return event.respondWith(
+      Promise.race([
+         fetchAndPutToCache(event.request),
+         getFromCache(event.request)
+      ])
+   );
+}
+
+В качесте решения можно предложить устранить "гонку" и вместо этого написать
+
+if (/^\/api\/v1/.test(requestURL.pathname)) {
+   return event.respondWith(fetchAndPutToCache(event.request));
+}
+
