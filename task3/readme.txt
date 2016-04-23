@@ -64,7 +64,7 @@ if (/^\/api\/v1/.test(requestURL.pathname)) {
    );
 }
 
-В качесте решения можно предложить устранить "гонку" и вместо этого написать
+В качестве решения можно предложить устранить "гонку" и вместо этого написать
 
 if (/^\/api\/v1/.test(requestURL.pathname)) {
    return event.respondWith(fetchAndPutToCache(event.request));

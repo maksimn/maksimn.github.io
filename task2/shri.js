@@ -1,17 +1,27 @@
 ﻿var SHRI = (function () {
     function shri() {
+        this.teams = [];
+        this.students = [];
+        this.mentors = [];
     }
-    
+
     shri.prototype.createTeam = function (name) {
-        return new Team(name);
+        var len = this.teams.push(new Team(name));
+        return this.teams[len - 1];
     }
 
     shri.prototype.createStudent = function (name) {
-        return new Student(name);
+        var len = this.students.push(new Student(name));
+        return this.students[len - 1];
+    }
+
+    shri.prototype.createTask = function (name) {
+        return new Task(name);
     }
 
     shri.prototype.createMentor = function (name) {
-        return new Mentor(name);
+        var len = this.mentors.push(new Mentor(name));
+        return this.mentors[len - 1];
     }
 
     // Критерий распределения:
@@ -19,7 +29,7 @@
     // Один ментор может взять нескольких студентов.
     // Студент может быть распределен к ментору, только если он есть в списке у этого ментора.
     // При этом условии он распределяется к самому приоритетному ментору из своего списка.
-    shri.prototype.distribute = function (mentors) {
+    shri.prototype.distribute = function () {
         function prepareForDistribution() {
             for (var i = 0; i < mentors.length; i++) {
                 var studwithPriority = mentors[i].prioritizedStudents;
@@ -31,16 +41,6 @@
         }
         function prioritySort(ps1, ps2) {
             return ps2.priority - ps1.priority;
-        }
-        function getStudents() {
-            for (var i = 0; i < mentors.length; i++) {
-                for (var j = 0; j < mentors[i].prioritizedStudents.length; j++) {
-                    var student = mentors[i].prioritizedStudents[j].student;
-                    if (!students.some(function (s) { return s.name == student.name; })) {
-                        students.push(student);
-                    }
-                }
-            }
         }
         function initResultsArray() {
             for (var i = 0; i < mentors.length; i++) {
@@ -59,9 +59,8 @@
                 }
             }
         }
-        var students = [], results = [];
+        var students = this.students, mentors = this.mentors, results = [];
         prepareForDistribution();
-        getStudents();
         initResultsArray();
         distribution();
         return results;
@@ -73,22 +72,12 @@
         this.tasks = [];
     }
 
-    Subject.prototype.createTask = function (name) {
-        this.tasks.push(new Task(name));
+    Subject.prototype.addTask = function (task) {
+        this.tasks.push(task);
     }
 
-    Subject.prototype.getTask = function (name) {
-        for (var i = 0; i < this.tasks.length; i++) {
-            if (this.tasks[i].name == name) {
-                return this.tasks[i];
-            }
-        }
-        return null;
-    }
-
-    Subject.prototype.setGradeForTask = function (name, value) {
-        var task = this.getTask(name);
-        task.grade = value;
+    Subject.prototype.task = function (name) {
+        return find(this.tasks, function (t) { return t.name == name; }, {});
     }
 
     // class Team : Subject ////////////////////////////////////////
@@ -99,11 +88,12 @@
 
     Team.prototype = new Subject();
     Team.prototype.constructor = Team;
-
     Team.prototype.addStudent = function (student) {
         this.students.push(student);
     }
-
+    Team.prototype.student = function (name) {
+        return find(this.students, function (s) { return s.name == name; }, {});
+    }
     // class Student : Subject ///////////////////////////////////// 
     function Student(name) {
         Subject.apply(this, arguments);
@@ -112,21 +102,34 @@
 
     Student.prototype = new Subject();
     Student.prototype.constructor = Student;
-
     Student.prototype.addMentor = function (mentor) {
-        this.prioritizedMentors.push({ mentor: mentor, priority: undefined });
+        this.prioritizedMentors.push({ mentor: mentor });
     }
-
-    Student.prototype.setPriorityForMentor = function(mentorName, value) {
-        _setPriority(this.prioritizedMentors, "mentor", mentorName, value);
+    Student.prototype.mentor = function (name) {
+        return find(this.prioritizedMentors, function (x) { return x.name == name; }, {}).mentor;
+    }
+    Student.prototype.mentorPriority = function (name, value) {
+        var mentorInfo = find(this.prioritizedMentors, function (x) { return x.mentor.name == name; }, {});
+        if (value !== undefined) {
+            mentorInfo.priority = value;
+        } else {
+            return mentorInfo.priority;
+        }
     }
 
     // class Task ///////////////////////////////////////////////////
     function Task(name) {
         this.name = name;
-        this.grade = undefined;
+        this._grade = undefined;
     }
 
+    Task.prototype.grade = function (value) {
+        if (value !== undefined) {
+            this._grade = value;
+        } else {
+            return this._grade;
+        }
+    }
     // class Mentor
     function Mentor(name) {
         this.name = name;
@@ -134,19 +137,23 @@
     }
 
     Mentor.prototype.addStudent = function (student) {
-        this.prioritizedStudents.push({ student: student, priority: undefined });
+        this.prioritizedStudents.push({ student: student });
     }
 
-    Mentor.prototype.setPriorityForStudent = function (studentName, value) {
-        _setPriority(this.prioritizedStudents, "student", studentName, value);
+    Mentor.prototype.student = function (name) {
+        return find(this.prioritizedStudents, function (x) { return x.student.name == name; }, {}).student;
     }
 
-    // Auxiliary functions ////////////////////////////////////////////
-    function _setPriority(array, prop, name, value) {
-        var elem = find(array, function (x) { return x[prop].name == name; }, {});
-        elem.priority = value;
+    Mentor.prototype.studentPriority = function (name, value) {
+        var student = find(this.prioritizedStudents, function (x) { return x.student.name == name; }, {});
+        if (value !== undefined) {
+            student.priority = value;
+        } else {
+            return student.priority;
+        }
     }
 
+    // Auxiliary functions /////////////////////////////////////////
     function find(arr, predicate, ctx) {
         var result = null;
         arr.some(function (el, i) {
