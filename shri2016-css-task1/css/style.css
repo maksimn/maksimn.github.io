@@ -1,8 +1,19 @@
-﻿.background_picture {
+﻿body {
+    font-family: Georgia, serif;
+}
+
+.background_picture {
     width: 100%; 
     height: 80vh; 
+    background-size: 100% 115%;
+}
+
+.pic1 {
     background-image: url(../img/Unknown-6.jpeg); 
-    background-size: 100% 100%;
+}
+
+.pic2 {
+    background-image: url(../img/Unknown-9.jpeg);
 }
 
 .txt {
@@ -11,23 +22,63 @@
 }
 
 .name {
-    padding-top: 35vh;
-    font-size: 10vh;
+    padding-top: 37vh;
+    font-size: 38px;
     font-weight: 600;
-    letter-spacing: 2vw;
+    letter-spacing: 16px;
+    line-height: 80px;
 }
 
 .subname {
+    font-size: 12px;
     font-weight: 500;
-    padding-top: 6vh;
-    letter-spacing: 0.5vw;
+    padding-top: 4vh;
+    letter-spacing: 6px;
 }
 
 .story_source, .authors {
-    font-size: 2vh;
+    font-size: 9px;
     line-height: 1.5;
 }
 
 .story_source {
-    margin-top: 20vh;
+    margin-top: 19vh;
+}
+
+.content {
+    margin: 8vh 40px 10vh 40px;
+    width: 920px;
+    font-size: 13px;
+    line-height: 26px;
+}
+
+.leftcol {
+    width: 55%;
+    max-width: 600px;
+    display: inline-block;
+}
+
+.rightcol {
+    width: 38%;
+    display: inline-block;
+    font-weight: 600;
+    text-align: justify;
+    vertical-align: top;
+    margin-left: 6%;
+}
+
+.rightcol div {
+    border-left: 4px solid #F0EFEA;
+    padding-left: 3%;
+}
+
+.main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.small {
+   font-size: 0.9em;
+   line-height: 1.7;
+   font-weight: 400;
 }
