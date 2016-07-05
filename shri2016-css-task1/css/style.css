@@ -1,5 +1,8 @@
-﻿body {
-    font-family: Georgia, serif;
+﻿body { font-family: Georgia, serif; }
+
+.main {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 .background_picture {
@@ -8,13 +11,11 @@
     background-size: 100% 115%;
 }
 
-.pic1 {
-    background-image: url(../img/Unknown-6.jpeg); 
-}
+.pic1 { background-image: url(../img/Unknown-6.jpeg); }
 
-.pic2 {
-    background-image: url(../img/Unknown-9.jpeg);
-}
+.pic2 { background-image: url(../img/Unknown-9.jpeg); }
+
+.pic3 { background-image: url(../img/Unknown-16.jpeg); }
 
 .txt {
     text-align: center;
@@ -23,7 +24,7 @@
 
 .name {
     padding-top: 37vh;
-    font-size: 38px;
+    font-size: 4.5vh;
     font-weight: 600;
     letter-spacing: 16px;
     line-height: 80px;
@@ -47,7 +48,6 @@
 
 .content {
     margin: 8vh 40px 10vh 40px;
-    width: 920px;
     font-size: 13px;
     line-height: 26px;
 }
@@ -59,22 +59,22 @@
 }
 
 .rightcol {
-    width: 38%;
+    width: 45%;
+    max-width: 400px;
     display: inline-block;
     font-weight: 600;
     text-align: justify;
     vertical-align: top;
-    margin-left: 6%;
 }
 
-.rightcol div {
+.rcontent {
+    margin-left: 16.5%;
     border-left: 4px solid #F0EFEA;
-    padding-left: 3%;
+    padding-left: 3.5%;
 }
 
-.main {
-    width: 1000px;
-    margin: 0 auto;
+.rightcol .rcontent:first-child {
+    margin-bottom: 10px;
 }
 
 .small {
