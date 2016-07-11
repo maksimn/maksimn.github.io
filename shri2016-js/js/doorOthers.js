@@ -63,11 +63,19 @@ function Door1(number, onUnlock) {
     DoorBase.apply(this, arguments);
 
     // ==== Напишите свой код для открытия второй двери здесь ====
-    // Для примера дверь откроется просто по клику на неё
-    this.popup.addEventListener('click', function() {
-        this.unlock();
-    }.bind(this));
+    var fixer = this.popup.querySelector('.door-riddle__fixer'), 
+        bolt = this.popup.querySelector('.door-riddle__bolt');
+    var x0 = getNumFromXXXpx(window.getComputedStyle(fixer).getPropertyValue('left'));
+    var x1 = bolt.clientWidth + getNumFromXXXpx(window.getComputedStyle(bolt).getPropertyValue('left'));
+    var len = x1 - x0;
+
     // ==== END Напишите свой код для открытия второй двери здесь ====
+
+    function getNumFromXXXpx(str) {
+        var len = str.length;
+        var s = str.substring(0, len - 2);
+        return parseInt(s);
+    }
 }
 Door1.prototype = Object.create(DoorBase.prototype);
 Door1.prototype.constructor = DoorBase;
