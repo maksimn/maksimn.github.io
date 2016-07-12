@@ -185,6 +185,15 @@ body {
     background-color: #F3E5D9;
 }
 
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 .door-riddle__bolt {
     position: absolute;
     top: 310px;

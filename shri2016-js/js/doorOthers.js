@@ -65,16 +65,47 @@ function Door1(number, onUnlock) {
     // ==== Напишите свой код для открытия второй двери здесь ====
     var fixer = this.popup.querySelector('.door-riddle__fixer'), 
         bolt = this.popup.querySelector('.door-riddle__bolt');
-    var x0 = getNumFromXXXpx(window.getComputedStyle(fixer).getPropertyValue('left'));
-    var x1 = bolt.clientWidth + getNumFromXXXpx(window.getComputedStyle(bolt).getPropertyValue('left'));
+    var x0 = getNumFromXXXpx(getElementCssLeft(fixer));
+    var x2 = getNumFromXXXpx(getElementCssLeft(bolt));
+    var x1 = bolt.clientWidth + x2;
+    
     var len = x1 - x0;
 
+    bolt.addEventListener('pointerdown', _onBoltPointerDown.bind(this));
+    bolt.addEventListener('pointerup', _onBoltPointerUp.bind(this));
+    bolt.addEventListener('pointermove', _onBoltPointerMove.bind(this));
+
+    var touch_beg, touch_end, touch_pos, is_pressed = false;
+
+    function _onBoltPointerDown(e) {
+        is_pressed = true;
+        touch_beg = e.x;
+    }
+
+    function _onBoltPointerUp(e) {
+        is_pressed = false;
+        touch_end = e.x;
+        if(touch_beg - touch_end > len) {
+            this.unlock();
+        }
+    }
+
+    function _onBoltPointerMove(e) {
+        touch_pos = e.x;
+        if (is_pressed) {
+            // Здесь нужно задать css-свойство left засова сдвинутым на touch_beg - touch_pos влево относительно начального положения
+            bolt.style.left = (x2 - (touch_beg - touch_pos)) + "px";
+        }
+    }
     // ==== END Напишите свой код для открытия второй двери здесь ====
 
     function getNumFromXXXpx(str) {
-        var len = str.length;
-        var s = str.substring(0, len - 2);
+        var s = str.substring(0, str.length - 2);
         return parseInt(s);
+    }
+
+    function getElementCssLeft(e) {
+        return window.getComputedStyle(e).getPropertyValue('left');
     }
 }
 Door1.prototype = Object.create(DoorBase.prototype);
