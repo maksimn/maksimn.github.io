@@ -74,6 +74,8 @@ function Door1(number, onUnlock) {
     bolt.addEventListener('pointerdown', _onBoltPointerDown.bind(this));
     bolt.addEventListener('pointerup', _onBoltPointerUp.bind(this));
     bolt.addEventListener('pointermove', _onBoltPointerMove.bind(this));
+    bolt.addEventListener('pointercancel', _onBoltPointerUp.bind(this));
+    bolt.addEventListener('pointerleave', _onBoltPointerUp.bind(this));
 
     // Координата начала касания экрана, текущая позиция касания; флаг касания
     var touch_beg, touch_pos, is_pressed = false;
