@@ -65,39 +65,37 @@ function Door1(number, onUnlock) {
     // ==== Напишите свой код для открытия второй двери здесь ====
     var fixer = this.popup.querySelector('.door-riddle__fixer'), 
         bolt = this.popup.querySelector('.door-riddle__bolt');
-    var x0 = getNumFromXXXpx(getElementCssLeft(fixer));
-    var x2 = getNumFromXXXpx(getElementCssLeft(bolt));
-    var x1 = bolt.clientWidth + x2;
-    
-    var len = x1 - x0;
+
+    var bolt_len = bolt.clientWidth; // длина засова
+    var x0 = getNumFromXXXpx(getElementCssLeft(fixer)); // координата левой границы "держателя"
+    var x2 = boltPosition(); // координата левой границы засова
+    var x1 = bolt_len + x2;  // координата правой границы засова
 
     bolt.addEventListener('pointerdown', _onBoltPointerDown.bind(this));
     bolt.addEventListener('pointerup', _onBoltPointerUp.bind(this));
     bolt.addEventListener('pointermove', _onBoltPointerMove.bind(this));
 
-    var touch_beg, touch_end, touch_pos, is_pressed = false;
+    // Координата начала касания экрана, текущая позиция касания; флаг касания
+    var touch_beg, touch_pos, is_pressed = false;
 
     function _onBoltPointerDown(e) {
         is_pressed = true;
         touch_beg = e.x;
+        x2 = boltPosition();
     }
 
     function _onBoltPointerUp(e) {
         is_pressed = false;
-        touch_end = e.x;
-        if(touch_beg - touch_end > len) {
+        if (boltPosition() + bolt_len < x0) {
             this.unlock();
         }
     }
 
-    function _onBoltPointerMove(e) {
-        touch_pos = e.x;
+    function _onBoltPointerMove(e) {        
         if (is_pressed) {
-            // Здесь нужно задать css-свойство left засова сдвинутым на touch_beg - touch_pos влево относительно начального положения
-            bolt.style.left = (x2 - (touch_beg - touch_pos)) + "px";
+            updatePosition(e);
         }
     }
-    // ==== END Напишите свой код для открытия второй двери здесь ====
 
     function getNumFromXXXpx(str) {
         var s = str.substring(0, str.length - 2);
@@ -107,6 +105,24 @@ function Door1(number, onUnlock) {
     function getElementCssLeft(e) {
         return window.getComputedStyle(e).getPropertyValue('left');
     }
+
+    function boltPosition() {
+        return getNumFromXXXpx(getElementCssLeft(bolt));
+    }
+
+    function updatePosition(e) {
+        touch_pos = e.x;
+        var d = touch_beg - touch_pos;
+        if (isMovable()) {
+            bolt.style.left = (x2 - d) + "px";
+        }
+    }
+
+    function isMovable() {
+        var pos = boltPosition();
+        return pos >= 0 && pos + bolt_len <= x1 && pos + bolt_len - touch_beg + touch_pos <= x1;
+    }
+    // ==== END Напишите свой код для открытия второй двери здесь ====
 }
 Door1.prototype = Object.create(DoorBase.prototype);
 Door1.prototype.constructor = DoorBase;
