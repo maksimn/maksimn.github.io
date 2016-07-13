@@ -62,6 +62,21 @@ Door0.prototype.constructor = DoorBase;
 function Door1(number, onUnlock) {
     DoorBase.apply(this, arguments);
 
+    var dragtest = this.popup.querySelector('.drag_test');
+    var flag=false, t_beg, lbrdr = 0;
+    dragtest.addEventListener('pointerdown', function (e) {
+        flag = true;
+        t_beg = e.x;
+        lbrdr = getNumFromXXXpx(getElementCssLeft(dragtest));
+    });
+    dragtest.addEventListener('pointerup', function (e) { });
+    dragtest.addEventListener('pointermove', function (e) {
+        if(flag) {
+            var pos = e.x;
+            dragtest.style.left = pos - t_beg + "px";
+        }
+    });
+    
     // ==== Напишите свой код для открытия второй двери здесь ====
     var fixer = this.popup.querySelector('.door-riddle__fixer'), 
         bolt = this.popup.querySelector('.door-riddle__bolt');
