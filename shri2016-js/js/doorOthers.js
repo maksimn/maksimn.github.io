@@ -61,21 +61,6 @@ Door0.prototype.constructor = DoorBase;
  */
 function Door1(number, onUnlock) {
     DoorBase.apply(this, arguments);
-
-    var dragtest = this.popup.querySelector('.drag_test');
-    var flag=false, t_beg, lbrdr = 0;
-    dragtest.addEventListener('pointerdown', function (e) {
-        flag = true;
-        t_beg = e.x;
-        lbrdr = getNumFromXXXpx(getElementCssLeft(dragtest));
-    });
-    dragtest.addEventListener('pointerup', function (e) { });
-    dragtest.addEventListener('pointermove', function (e) {
-        if(flag) {
-            var pos = e.x;
-            dragtest.style.left = pos - t_beg + "px";
-        }
-    });
     
     // ==== Напишите свой код для открытия второй двери здесь ====
     var fixer = this.popup.querySelector('.door-riddle__fixer'), 
@@ -114,15 +99,6 @@ function Door1(number, onUnlock) {
         }
     }
 
-    function getNumFromXXXpx(str) {
-        var s = str.substring(0, str.length - 2);
-        return parseInt(s);
-    }
-
-    function getElementCssLeft(e) {
-        return window.getComputedStyle(e).getPropertyValue('left');
-    }
-
     function boltPosition() {
         return getNumFromXXXpx(getElementCssLeft(bolt));
     }
@@ -154,10 +130,45 @@ function Door2(number, onUnlock) {
     DoorBase.apply(this, arguments);
 
     // ==== Напишите свой код для открытия третей двери здесь ====
-    // Для примера дверь откроется просто по клику на неё
-    this.popup.addEventListener('click', function() {
-        this.unlock();
-    }.bind(this));
+    var bolt = [], fixer = [], lock = [];
+    for (var i = 1; i <= 2; i++) {
+        bolt.push(new Bolt(this.popup.querySelector('.bolt' + i), i % 2 == 0));
+        fixer.push(new Fixer(this.popup.querySelector('.fixer' + i, i % 2 == 0)));
+        lock.push(new Lock(bolt[i - 1], fixer[i - 1]));
+        var dragElem = bolt[i - 1].element;
+        dragElem.addEventListener('pointerdown', _onBoltPointerDown.bind(this));
+        dragElem.addEventListener('pointerup', _onBoltPointerUp.bind(this));
+        dragElem.addEventListener('pointermove', _onBoltPointerMove.bind(this));
+        dragElem.addEventListener('pointercancel', _onBoltPointerUp.bind(this));
+        dragElem.addEventListener('pointerleave', _onBoltPointerUp.bind(this));
+    }
+    // коорд. левой границы засова в момент начала тача, коорд. начала касания экрана, текущая позиция касания; флаг касания
+    var x, touch_beg, touch_pos, is_pressed = false;
+
+    function _onBoltPointerDown(e) {
+        is_pressed = true;
+        touch_beg = e.x;
+        x = getNumFromXXXpx(getElementCssLeft(e.target));
+    }
+
+    function _onBoltPointerUp(e) {
+        is_pressed = false;
+        if (lock.every(function (x) { return x.isOpened(); })) {
+            this.unlock();
+        }
+    }
+
+    function _onBoltPointerMove(e) {
+        if (is_pressed) {
+            updatePosition(e);
+        }
+    }
+
+    function updatePosition(e) {
+        touch_pos = e.x;
+        var d = touch_beg - touch_pos;
+        e.target.style.left = (x - d) + "px";
+    }
     // ==== END Напишите свой код для открытия третей двери здесь ====
 }
 Door2.prototype = Object.create(DoorBase.prototype);
@@ -174,10 +185,45 @@ function Box(number, onUnlock) {
     DoorBase.apply(this, arguments);
 
     // ==== Напишите свой код для открытия сундука здесь ====
-    // Для примера сундук откроется просто по клику на него
-    this.popup.addEventListener('click', function() {
-        this.unlock();
-    }.bind(this));
+    var bolt = [], fixer = [], lock = [];
+    for (var i = 1; i <= 3; i++) {
+        bolt.push(new Bolt(this.popup.querySelector('.bolt' + i), i % 2 == 0));
+        fixer.push(new Fixer(this.popup.querySelector('.fixer' + i, i % 2 == 0)));
+        lock.push(new Lock(bolt[i - 1], fixer[i - 1]));
+        var dragElem = bolt[i - 1].element;
+        dragElem.addEventListener('pointerdown', _onBoltPointerDown.bind(this));
+        dragElem.addEventListener('pointerup', _onBoltPointerUp.bind(this));
+        dragElem.addEventListener('pointermove', _onBoltPointerMove.bind(this));
+        dragElem.addEventListener('pointercancel', _onBoltPointerUp.bind(this));
+        dragElem.addEventListener('pointerleave', _onBoltPointerUp.bind(this));
+    }
+    // коорд. левой границы засова в момент начала тача, коорд. начала касания экрана, текущая позиция касания; флаг касания
+    var x, touch_beg, touch_pos, is_pressed = false;
+
+    function _onBoltPointerDown(e) {
+        is_pressed = true;
+        touch_beg = e.x;
+        x = getNumFromXXXpx(getElementCssLeft(e.target));
+    }
+
+    function _onBoltPointerUp(e) {
+        is_pressed = false;
+        if (lock.every(function (x) { return x.isOpened(); })) {
+            this.unlock();
+        }
+    }
+
+    function _onBoltPointerMove(e) {
+        if (is_pressed) {
+            updatePosition(e);
+        }
+    }
+
+    function updatePosition(e) {
+        touch_pos = e.x;
+        var d = touch_beg - touch_pos;
+        e.target.style.left = (x - d) + "px";
+    }
     // ==== END Напишите свой код для открытия сундука здесь ====
 
     this.showCongratulations = function() {
@@ -205,3 +251,47 @@ function Door3(number, onUnlock) {
 }
 Door3.prototype = Object.create(DoorBase.prototype);
 Door3.prototype.constructor = DoorBase;
+
+function getNumFromXXXpx(str) {
+    var s = str.substring(0, str.length - 2);
+    return parseInt(s);
+}
+
+function getElementCssLeft(e) {
+    return window.getComputedStyle(e).getPropertyValue('left');
+}
+
+function Lock(bolt, fixer) {
+    this.bolt = bolt;
+    this.fixer = fixer;
+}
+Lock.prototype.isOpened = function () {
+    if (this.bolt.isRtl) {
+        return this.bolt.leftBorder() > this.fixer.rightBorder();
+    }
+    return this.bolt.rightBorder() < this.fixer.leftBorder();
+}
+function Bolt(element, isRtl) {
+    this.element = element;
+    this.len = this.element.clientWidth;
+    this.isRtl = isRtl;
+}
+Bolt.prototype.leftBorder = function () {
+    return getNumFromXXXpx(getElementCssLeft(this.element));
+}
+Bolt.prototype.rightBorder = function () {
+    return this.leftBorder() + this.len;
+}
+function Fixer(element, isRtl) {
+    this.element = element;
+    this.len = this.element.clientWidth;
+    this.isRtl = isRtl;
+    this._leftBorder = getNumFromXXXpx(getElementCssLeft(this.element));
+    this._rightBorder = this._leftBorder + this.len;
+}
+Fixer.prototype.leftBorder = function () {
+    return this._leftBorder;
+}
+Fixer.prototype.rightBorder = function () {
+    return this._rightBorder;
+}
