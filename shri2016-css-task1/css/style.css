@@ -5,10 +5,28 @@
     margin: 0 auto;
 }
 
+.big_first_article_letter {
+    display: inline-block; 
+    font-size: 40px; 
+    font-weight: 600; 
+    margin-top: -19px;
+} 
+
 .background_picture {
     width: 100%; 
     height: 80vh; 
-    background-size: 100% 115%;
+    background-size: cover;
+    background-position: center;
+}
+
+.pic1 {
+    background-image: url(../img/Unknown-6.jpeg);
+}
+.pic2 {
+    background-image: url(../img/Unknown-9.jpeg);
+}
+.pic3 {
+    background-image: url(../img/Unknown-16.jpeg);
 }
 
 .txt {
@@ -17,17 +35,17 @@
 }
 
 .name {
-    padding-top: 39vh;
-    font-size: 4.5vh;
+    padding-top: 39vh; /* исправить */
+    font-size: 4.5vh; /* исправить */
     font-weight: 600;
     letter-spacing: 16px;
-    line-height: 8vh;
+    line-height: 8vh; /* исправить */
 }
 
 .subname {
     font-size: 12px;
     font-weight: 500;
-    padding-top: 4vh;
+    padding-top: 4vh; /* исправить */
     letter-spacing: 6px;
 }
 
@@ -37,7 +55,7 @@
 }
 
 .story_source {
-    margin-top: 19vh;
+    margin-top: 19vh; /* исправить */
 }
 
 .content {
@@ -80,6 +98,12 @@
     background-repeat: no-repeat; 
     background-size: contain;
 }
+.img1 {
+    background-image: url(../img/Unknown-8.jpeg);
+}
+.img2 {
+    background-image: url(../img/Unknown-15.jpeg);
+}
 
 .small {
    font-size: 0.9em;
@@ -94,7 +118,7 @@
     }
     .rcontent {        
         position: static;
-        margin: 5vh auto;
+        margin: 5vh auto; /* исправить */
         width: 50%;
         min-width: 260px;
     }
@@ -105,18 +129,18 @@
     }
     .img {
         width: 100%;
-        margin-bottom: 2.5vh;
+        margin-bottom: 2.5vh; /* исправить */
         background-size: 100% 100%;
-        height: 30vw; 
+        height: 30vw;  /* исправить */
     }
 }
 
 @media (max-width: 480px) {
    .name {
-       padding-top: 31vh;
+       padding-top: 31vh; /* исправить */
    }
    .story_source {
-       margin-top: 19vh;
+       margin-top: 19vh; /* исправить */
    }
    .background_picture {
        background-size: 100% 100%;
@@ -128,22 +152,22 @@
 
    .rcontent {        
         position: static; 
-        margin: 5vh 10vw;
+        margin: 5vh 10vw; /* исправить */
         width: 77.5vw;
     }
     .leftcol {
         position: static;
-        margin: 0 5vw 5vh 5vw;
+        margin: 0 5vw 5vh 5vw; /* исправить */
         width: 90vw;
     }
     .img {
         width: 100vw;
-        margin-bottom: 2.5vh;
+        margin-bottom: 2.5vh; /* исправить */
         background-size: 100% 100%;
-        height: 66vw; 
+        height: 66vw; /* ? исправить ? */
     }
     .images.rcontent {
-        margin: 5vh 0;
+        margin: 5vh 0; /* ?? */
         width: 100vw;
         padding-left: 0;
     }
