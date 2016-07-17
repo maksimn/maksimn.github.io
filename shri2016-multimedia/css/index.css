@@ -1,0 +1,42 @@
+﻿body {
+    font-family: Tahoma, serif;
+    background-color: #d8d8d8;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.silencer {
+    width: 234px;
+    margin: 0 auto 0 auto;
+}
+
+.silencer_header {
+    margin: 85px 0 40px 0;
+}
+
+input[name$='link'] {
+    font-size: 14px;
+    height: 28px;
+    width: 230px;
+    margin-bottom: 20px;
+}
+
+.silencer_start_button_line {
+    position: relative;
+}
+
+.silencer_start_button {
+    width: 80px;
+    height: 21px;
+    font-size: 14px;
+    background-color: #ffdb4d;
+    padding: 6px 0 0 10px;
+    border-radius: 5px 5px;
+    border-bottom: 1px solid #acacac;
+    border-right: 1px solid #acacac;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
