@@ -31,3 +31,14 @@ input[type=submit] {
     position: absolute;
     right: 0;
 }
+
+.silencer_work {
+    margin: 100px auto 20px auto;
+    width: 390px;
+}
+
+#return_link_wrapper {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
