@@ -18,10 +18,10 @@
                 <input type="url" name="video" placeholder="  Ссылка на видео" required />
             </div>
             <div class="silencer_input_line">
-                <input type="url" name="subs" placeholder="  Ссылка на субтитры" />
+                <input type="url" name="subs" placeholder="  Ссылка на субтитры" required />
             </div>
             <div class="silencer_input_line">
-                <input type="url" name="audio" placeholder="  Ссылка на аудио" />
+                <input type="url" name="audio" placeholder="  Ссылка на аудио" required />
             </div>
             <div class="silencer_send_button_line">
                 <input type="submit" value="Заглушить" />
@@ -32,6 +32,7 @@
         <div id="return_link_wrapper"><a id="return_back_link" href="">Назад</a></div>
         <audio src="" loop autoplay></audio>
         <video src="" width="380" muted loop></video>
+        <canvas id="myCanvas" width="380" height="300"></canvas>
     </div>
 </body>
 </html>
