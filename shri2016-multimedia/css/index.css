@@ -46,7 +46,7 @@ input[type=submit] {
 
 #myCanvas, #scratches_video, #sub {
     position: absolute;
-    top: 230px;
+    top: 0;
     left: 0;
 }
 #scratches_video {
@@ -64,4 +64,11 @@ input[type=submit] {
 }
 #subArea {
     margin: 70px 20px 0 20px;
+}
+#video {
+    display: none;
+}
+#stop_and_play_button {
+    position: absolute;
+    top: 280px;
 }

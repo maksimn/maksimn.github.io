@@ -68,56 +68,51 @@
         return cnvs.getContext("2d");
     }
     function playVideoAndDrawOnCanvas(ctx) {
-        var i, videoEl = document.getElementById('video');
+        var videoEl = document.getElementById('video');
         var subNum = 0; // номер следующего субтитра, который нужно показать
         var videoCurrentTime = document.getElementById('videoCurrentTime');
         var subtitlesStart = document.getElementById('subtitlesStart');
         var subtitleText = document.getElementById('subtitleText');
 
+        var scratches = document.getElementById('scratches_video');
+        scratches.play();
+
         var sub = document.getElementById('subArea');
 
-        videoEl.addEventListener('play', _onPlayDrawVideoFramesOnCanvas, false);
-        videoEl.addEventListener('pause', _onPauseStopDrawVideoFramesOnCanvas, false);
-        videoEl.addEventListener('ended', _onVideoEnded, false);
+        setInterval(function () {
+            videoCurrentTime.innerText = videoEl.currentTime;
+            subtitlesStart.innerText = srt[subNum].start;
+            var subStart = srt[subNum].start;
 
-        function _onVideoEnded(e) {
+            /* Здесь нужно написать код, обрабатывающий показ субтитров */
+            if (videoEl.currentTime >= subStart) {
+                ctx.fillRect(0, 0, VIDEO_WIDTH, VIDEO_HEIGHT);
+                subtitleText.innerText = srt[subNum].text;
+                sub.innerText = srt[subNum].text;
+                if (videoEl.currentTime >= subStart + srt[subNum].duration) {
+                    videoEl.currentTime = subStart;
+                    subtitleText.innerText = "";
+                    sub.innerText = "";
+                    subNum++;
+                }
+            } else {
+                /* Конец кода, обрабатывающего показ субтитров */
+                ctx.drawImage(videoEl, 0, 0, VIDEO_WIDTH, VIDEO_HEIGHT);
+                var imgData = ctx.getImageData(0, 0, VIDEO_WIDTH, VIDEO_HEIGHT);
+                for (var j = 0; j < imgData.data.length; j += 4) {
+                    var grey = greyFromRGB(imgData.data[j], imgData.data[j + 1], imgData.data[j + 2]);
+                    imgData.data[j + 2] = imgData.data[j + 1] = imgData.data[j] = grey;
+                }
+                ctx.putImageData(imgData, 0, 0);
+            }
+        }, INTERVAL_BETWEEN_FRAMES);
+
+        videoEl.addEventListener('ended', function(e) {
             videoEl.currentTime = 0;
             videoEl.pause();
             document.querySelector('audio').pause();
-        }
-
-        function _onPlayDrawVideoFramesOnCanvas(e) {
-            i = window.setInterval(function () {
-                videoCurrentTime.innerText = videoEl.currentTime;
-                subtitlesStart.innerText = srt[subNum].start;
-
-                /* Здесь нужно написать код, обрабатывающий показ субтитров */                
-                if (videoEl.currentTime >= srt[subNum].start) {
-                    videoEl.pause();
-                } else {
-                    /* Конец кода, обрабатывающего показ субтитров */
-                    ctx.drawImage(videoEl, 0, 0, VIDEO_WIDTH, VIDEO_HEIGHT);
-                    var imgData = ctx.getImageData(0, 0, VIDEO_WIDTH, VIDEO_HEIGHT);
-                    for (var j = 0; j < imgData.data.length; j += 4) {
-                        var grey = greyFromRGB(imgData.data[j], imgData.data[j + 1], imgData.data[j + 2]);
-                        imgData.data[j + 2] = imgData.data[j + 1] = imgData.data[j] = grey;
-                    }
-                    ctx.putImageData(imgData, 0, 0);
-                }
-            }, INTERVAL_BETWEEN_FRAMES);
-            document.getElementById('scratches_video').play();
-        }
-        function _onPauseStopDrawVideoFramesOnCanvas(e) {
-            window.clearInterval(i);
-            ctx.fillRect(0, 0, VIDEO_WIDTH, VIDEO_HEIGHT);
-            subtitleText.innerText = srt[subNum].text;
-            sub.innerText = srt[subNum].text;
-            setTimeout(function () {
-                videoEl.play();
-                subtitleText.innerText = "";
-                sub.innerText = "";
-            }, srt[subNum++].duration * 1000);
-        }
+            scratches.pause();
+        }, false); 
     }
     function initSrt(srtFileText) {
         var num = 1, pos = 0;
@@ -158,10 +153,10 @@
                 text: txt
             };
         }
-        while((ch = readChunk()).length > 0) {
+        while ((ch = readChunk()).length > 0) {
             srt.push(getObjForSrt());
         }
-        ch = readLastChunk();        
+        ch = readLastChunk();
         srt.push(getObjForSrt());
     }
 }
