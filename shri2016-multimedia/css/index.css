@@ -44,12 +44,24 @@ input[type=submit] {
     right: -50px;
 }
 
-#myCanvas, #scratches_video {
+#myCanvas, #scratches_video, #sub {
     position: absolute;
     top: 230px;
     left: 0;
 }
 #scratches_video {
-    z-index: 1;
+    z-index: 2;
     opacity: 0.2;
+}
+#sub {
+    z-index: 1;
+    color: white;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 28px;
+    height: 280px;
+    width: 380px;
+    text-align: center;
+}
+#subArea {
+    margin: 70px 20px 0 20px;
 }
