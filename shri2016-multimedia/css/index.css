@@ -35,10 +35,21 @@ input[type=submit] {
 .silencer_work {
     margin: 100px auto 20px auto;
     width: 390px;
+    position: relative;
 }
 
 #return_link_wrapper {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: -50px;
+    right: -50px;
+}
+
+#myCanvas, #scratches_video {
+    position: absolute;
+    top: 230px;
+    left: 0;
+}
+#scratches_video {
+    z-index: 1;
+    opacity: 0.2;
 }

@@ -6,9 +6,19 @@
     var subsUrl = searchParams.get('subs');
     var audioUrl = searchParams.get('audio');
 
+    //var urlAppendix = "https://crossorigin.me/";
+    var cors_api_host = 'cors-anywhere.herokuapp.com';
+    var cors_api_url = 'https://' + cors_api_host + '/';
+    var urlPrefix = cors_api_url;
+    if (videoUrl.startsWith('file:///')) {
+        urlPrefix = "";
+    }
+
     var VIDEO_WIDTH = 380;
-    var VIDEO_HEIGHT = 225;
-    var INTERVAL_BETWEEN_FRAMES = 100;
+    var VIDEO_HEIGHT = 280;
+    var INTERVAL_BETWEEN_FRAMES = 16;
+
+    var srt = []; // массив с данными, извлекаемыми из субтитров
 
     // Проверка, отправлены ли входные данные на страницу.
     // Если нет, то отображается начальная форма ввода
@@ -27,7 +37,7 @@
 
     loadSubtitles(function () {
         playAudioElement(document.querySelector('audio'));
-        playVideoElement(document.querySelector('video'));
+        playVideoElement(document.getElementById('video'));
         var ctx = getGraphicsContext();
         playVideoAndDrawOnCanvas(ctx);
     });
@@ -49,7 +59,7 @@
         audioEl.play();
     }
     function playVideoElement(videoEl) {
-        videoEl.src = videoUrl;
+        videoEl.src = urlPrefix + videoUrl;
         videoEl.play();
     }
     function getGraphicsContext() {
@@ -57,7 +67,7 @@
         return cnvs.getContext("2d");
     }
     function playVideoAndDrawOnCanvas(ctx) {
-        var i, videoEl = document.querySelector('video');
+        var i, videoEl = document.getElementById('video');
 
         videoEl.addEventListener('play', _onPlayDrawVideoFramesOnCanvas, false);
         videoEl.addEventListener('pause', _onPauseStopDrawVideoFramesOnCanvas, false);
@@ -66,7 +76,14 @@
         function _onPlayDrawVideoFramesOnCanvas(e) {
             i = window.setInterval(function () {
                 ctx.drawImage(videoEl, 0, 0, VIDEO_WIDTH, VIDEO_HEIGHT);
+                var imgData = ctx.getImageData(0, 0, VIDEO_WIDTH, VIDEO_HEIGHT);
+                for (var j = 0; j < imgData.data.length; j += 4) {
+                    var grey = greyFromRGB(imgData.data[j], imgData.data[j + 1], imgData.data[j + 2]);
+                    imgData.data[j + 2] = imgData.data[j + 1] = imgData.data[j] = grey;
+                }
+                ctx.putImageData(imgData, 0, 0);
             }, INTERVAL_BETWEEN_FRAMES);
+            document.getElementById('scratches_video').play();
         }
         function _onPauseStopDrawVideoFramesOnCanvas(e) {
             window.clearInterval(i);
@@ -74,6 +91,9 @@
     }
 }
 
+function greyFromRGB(red, green, blue) {
+    return 0.21 * red + 0.72 * green + 0.07 * blue;
+}
 function isEmptyString(s) {
     return s === "";
 }
