@@ -39,9 +39,9 @@ input[type=submit] {
 }
 
 #return_link_wrapper {
-    position: absolute;
-    top: -50px;
-    right: -50px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
 #myCanvas, #scratches_video, #sub {

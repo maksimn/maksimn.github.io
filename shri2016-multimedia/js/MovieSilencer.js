@@ -15,7 +15,6 @@
 
     var VIDEO_WIDTH = 380;
     var VIDEO_HEIGHT = 280;
-    var INTERVAL_BETWEEN_FRAMES = 16;
 
     var srt = []; // массив с данными, извлекаемыми из субтитров
 
@@ -62,29 +61,52 @@
     }
     function playVideoAndDrawOnCanvas(ctx) {
         var videoEl = document.getElementById('video');
+        var audioEl = document.getElementById('audio');
         var subNum = 0; // номер следующего субтитра, который нужно показать
-        var videoCurrentTime = document.getElementById('videoCurrentTime');
-        var subtitlesStart = document.getElementById('subtitlesStart');
-        var subtitleText = document.getElementById('subtitleText');
-
         var scratches = document.getElementById('scratches_video');
         scratches.play();
 
         var sub = document.getElementById('subArea');
 
-        setInterval(function () {
-            videoCurrentTime.innerText = videoEl.currentTime;
-            subtitlesStart.innerText = srt[subNum].start;
+        requestAnimationFrame(frame);
+
+        videoEl.addEventListener('ended', function (e) {
+            stopPlayer();
+        }, false);
+
+        var button = document.getElementById('stop_and_play_button');
+        var playing = true;
+        button.addEventListener('click', function () {
+            if (playing) {
+                playing = false;
+                button.innerHTML = '&#9658;';
+                stopPlayer();
+            } else {
+                playing = true;
+                button.innerHTML = '||';
+                startPlayer();
+            }
+        }, false);
+        function stopPlayer() {
+            videoEl.pause();
+            audioEl.pause();
+            scratches.pause();
+        }
+        function startPlayer() {
+            videoEl.play();
+            audioEl.play();
+            scratches.play();
+        }
+
+        function frame() {
             var subStart = srt[subNum].start;
 
             /* Здесь нужно написать код, обрабатывающий показ субтитров */
             if (videoEl.currentTime >= subStart) {
                 ctx.fillRect(0, 0, VIDEO_WIDTH, VIDEO_HEIGHT);
-                subtitleText.innerText = srt[subNum].text;
                 sub.innerText = srt[subNum].text;
                 if (videoEl.currentTime >= subStart + srt[subNum].duration) {
                     videoEl.currentTime = subStart;
-                    subtitleText.innerText = "";
                     sub.innerText = "";
                     subNum++;
                 }
@@ -98,52 +120,37 @@
                 }
                 ctx.putImageData(imgData, 0, 0);
             }
-        }, INTERVAL_BETWEEN_FRAMES);
-
-        videoEl.addEventListener('ended', function (e) {
-            videoEl.currentTime = 0;
-            videoEl.pause();
-            document.querySelector('audio').pause();
-            scratches.pause();
-        }, false);
+            requestAnimationFrame(frame);
+        }
     }
     function initSrt(srtFileText) {
-        var num = 1, pos = 0;
-        var dt = 0.0, k = 1;
-        var ch;
+        var num = 1, pos = 0, dt = 0.0, k = 1, ch;
         function readChunk() {
             var ind = srtFileText.indexOf('\n' + (num + 1) + '\n', pos);
             if (ind === -1) {
                 return "";
             }
             var res = srtFileText.substring(pos, ind);
-            pos = ind + 1;
-            num++;
-            return res;
+            return ((num++, pos = ind + 1), res);
         }
         function readLastChunk() {
             var ind = srtFileText.lastIndexOf('\n' + num + '\n');
             return srtFileText.substring(ind + 1);
         }
         function getObjForSrt() {
-            var ind1 = ch.indexOf('\n');
-            var ind2 = ch.indexOf('\n', ind1 + 1);
+            var ind1 = ch.indexOf('\n'), ind2 = ch.indexOf('\n', ind1 + 1);
             var timeStr = ch.substring(ind1 + 1, ind2);
-            var hh = parseInt(timeStr.substring(0, 2));
-            var mm = parseInt(timeStr.substring(3, 5));
-            var ss = parseInt(timeStr.substring(6, 8));
-            var ms = parseInt(timeStr.substring(9, 12));
-            var tBegin = hh * 3600 + mm * 60 + ss + ms * 0.001;
-            hh = parseInt(timeStr.substring(17, 19));
-            mm = parseInt(timeStr.substring(20, 22));
-            ss = parseInt(timeStr.substring(23, 25));
-            ms = parseInt(timeStr.substring(26, 29));
-            var tEnd = hh * 3600 + mm * 60 + ss + ms * 0.001;
-            var txt = ch.substring(ind2 + 1);
+            var split = timeStr.split(':');
+            var hh1 = parseInt(split[0]), mm1 = parseInt(split[1]),
+                ssms1 = parseFloat(split[2].split(' ')[0].replace(',', '.')),
+                hh2 = parseInt(split[2].split(' ')[2]), mm2 = parseInt(split[3]),
+                ssms2 = parseFloat(split[4].replace(',', '.'));
+            var tBegin = hh1 * 3600 + mm1 * 60 + ssms1;
+            var tEnd = hh2 * 3600 + mm2 * 60 + ssms2;
             return {
                 start: tEnd + dt,
                 duration: k * (tEnd - tBegin),
-                text: txt
+                text: ch.substring(ind2 + 1)
             };
         }
         while ((ch = readChunk()).length > 0) {
