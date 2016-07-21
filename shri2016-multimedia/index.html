@@ -6,14 +6,13 @@
     <title>Киноглушитель</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js"></script>
 </head>
 <body>
     <div class="silencer_start">
         <div class="silencer_header">
             <h1>Киноглушитель</h1>
         </div>
-        <form class="silencer_form">
+        <form class="silencer_form" action="player.html">
             <div class="silencer_input_line">
                 <input type="text" name="video" placeholder="  Ссылка на видео" required />
             </div>
@@ -27,26 +26,6 @@
                 <input type="submit" value="Заглушить" />
             </div>
         </form>
-    </div>
-    <div class="silencer_work">
-        <div id="return_link_wrapper"><a id="return_back_link" href="">Назад</a></div>
-        <audio id="audio" src="" loop autoplay></audio>
-        <video id="video" src="" width="380" muted crossorigin="anonymous"></video>
-        <canvas id="myCanvas" width="380" height="300"></canvas>
-        <video id="scratches_video" src="scratches480.mp4" width="380" muted loop></video>
-        <div id="sub">
-            <div id="subArea"></div>
-        </div>
-        <button id="stop_and_play_button">||</button>
-    </div>
-    <div style="position: fixed; top: 0; left: 0;">
-        <div>videoCurrentTime:</div>
-        <div id="videoCurrentTime"></div>
-        <div>subtitlesStart:</div>
-        <div id="subtitlesStart"></div>
-        <div>subtitleText:</div>
-        <div id="subtitleText">
-        </div>
     </div>
 </body>
 </html>
