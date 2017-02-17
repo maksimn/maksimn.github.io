@@ -2,6 +2,10 @@ function VideoHandler(subPhrasesInfo) {
     var url = new URL(window.location.href);
     var searchParams = url.searchParams;
     var videoUrl = searchParams.get('video');
+    if (!videoUrl) {
+        window.location = 'index.html';
+        return;
+    }
 
     this.videoEl = document.getElementById('video');
     this.subPhrasesInfo = subPhrasesInfo;
