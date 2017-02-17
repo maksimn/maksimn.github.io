@@ -1,1 +1,0 @@
-﻿window.addEventListener('load', function () { MovieSilencer(); }, false);
