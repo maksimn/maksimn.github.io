@@ -1,5 +1,7 @@
 ﻿body { font-family: Georgia, serif; }
 
+a:visited { color: white; }
+
 .main {
     max-width: 1000px;
     margin: 0 auto;
@@ -44,13 +46,13 @@
 .subname {
     font-size: 17px;
     font-weight: 500;
-    padding-top: 4vh; /* исправить */
+    padding-top: 3vh; /* исправить */
     letter-spacing: 6px;  /* исправить */
 }
 
 .story_source, .authors {
-    font-size: 0.7em;  /* исправить */
-    line-height: 1.5;  /* исправить */
+    font-size: 0.9em;  /* исправить */
+    line-height: 1.2;  /* исправить */
 }
 
 .story_source {
@@ -59,8 +61,8 @@
 
 .content {
     margin: 8vh 40px 10vh 40px;
-    font-size: 13px;  /* исправить */
-    line-height: 26px;  /* исправить */
+    font-size: 18px;  /* исправить */
+    line-height: 24px;  /* исправить */
     position: relative;
 }
 
