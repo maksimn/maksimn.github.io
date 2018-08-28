@@ -50,5 +50,10 @@
   "albumName": "В светлом ахуе",
   "albumYear": 2017, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_f2f4eb711fa440f2bf7875d48720b6af~mv2.jpg/v1/fill/w_349,h_349,al_c,q_80,usm_0.66_1.00_0.01/7abb88_f2f4eb711fa440f2bf7875d48720b6af~mv2.webp",
-  "albumMedianColor": "#bd7062"
+  "albumMedianColor": "#bd7062",
+  "tracks": [{
+	"name": "Трехрукая Маша",
+	"length_seconds": 176,
+	"url": ""
+  }]
 }]
