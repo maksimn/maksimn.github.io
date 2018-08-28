@@ -53,7 +53,48 @@
   "albumMedianColor": "#bd7062",
   "tracks": [{
 	"name": "Трехрукая Маша",
-	"length_seconds": 176,
-	"url": ""
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/1_trehrukaya_masha.mp3"
+  }, {
+    "name": "В светлом ахуе",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/2_v_svetlom_ahue.mp3"
+  }, {
+    "name": "Еби и беги",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/3_ebi_i_begi.mp3"
+  }, {
+    "name": "Бескозырка",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/4_beskozyrka.mp3"
+  }, {
+    "name": "А я больше не поеду",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/5_a_ya_bolshe_ne_poedu.mp3"
+  }, {
+    "name": "Сталинский костюм",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/6_stalinsky_kostum.mp3"
+  }, {
+    "name": "Депутатская-фиктивная",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/7_deputatskaya_fiktivnaya.mp3"
+  }, {
+    "name": "За окном горит фонарь",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/8_za_oknom_gorit_fonar.mp3"
+  }, {
+    "name": "Горбачев",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/9_gorbachev.mp3"
+  }, {
+    "name": "Гуманитарная",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/10_gumanitarnaya.mp3"
+  }, {
+    "name": "САТУРН",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/11_saturn.mp3"
+  }, {
+    "name": "Матильда",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/12_matilda.mp3"
+  }, {
+    "name": "Баба без лба",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/13_baba_bez_lba.mp3"
+  }, {
+    "name": "Вагинальный голкипер",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/14_vaginalnyi_golkiper.mp3"
+  }, {
+    "name": "Вратарь",
+	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/15_vratar.mp3"
   }]
 }]
