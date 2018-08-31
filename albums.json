@@ -3,48 +3,120 @@
   "albumName": "Notebook",
   "albumYear": 2010,
   "albumCover": "https://static.wixstatic.com/media/7abb88_385118cef02345f898d00d4707deedd6.jpg/v1/fill/w_345,h_345,al_c,q_80,usm_0.66_1.00_0.01/7abb88_385118cef02345f898d00d4707deedd6.webp",
-  "albumMedianColor": "#451e1c"
+  "albumMedianColor": "#451e1c",
+  "tracks": [{
+    "name": "Акуджава"
+  }, {
+    "name": "Матрица"
+  }, {
+    "name": "Буккакэ (Хуй на рыло)"
+  }, {
+    "name": "Ты мне всралась!"
+  }, {
+    "name": "Воин господень"
+  }, {
+    "name": "Ноутбук"
+  }, {
+    "name": "Девушка с Проспекта Мира"
+  }, {
+    "name": "У меня"
+  }, {
+    "name": "Грядущий Хам"
+  }, {
+    "name": "Моя мать Ева Браун"
+  }, {
+    "name": "Добрый маньяк Тихон"
+  }, {
+    "name": "Тополиный пух"
+  }, {
+    "name": "Ласточка"
+  }, {
+    "name": "Кондуктор"
+  }, {
+    "name": "Рифеншталь"
+  }, {
+    "name": "Паталогоанатом"
+  }, {
+    "name": "Эсэсовская лирическая"
+  }, {
+    "name": "Надежда"
+  }, {
+    "name": "Не забуду никогда"
+  }, {
+    "name": "Анна"
+  }]
 }, {
   "albumId": 2,
   "albumName": "Про козла",
   "albumYear": 2011, "albumCover":"https://static.wixstatic.com/media/7abb88_93cfccdfa6874aa2a063425ffbdad9c4.jpg/v1/fill/w_357,h_347,al_c,q_80,usm_0.66_1.00_0.01/7abb88_93cfccdfa6874aa2a063425ffbdad9c4.webp",
-  "albumMedianColor": "#bcbebd"
+  "albumMedianColor": "#bcbebd",
+  "tracks": [{
+    "name": "Без ансамбля"
+  }, {
+    "name": "Антифашистская"
+  }, {
+    "name": "Хуевое место"
+  }, {
+    "name": "Я теперь Чикатило"
+  }, {
+    "name": "Романс"
+  }, {
+    "name": "Песня про жиголо"
+  }, {
+    "name": "Не додумалась встать на колени"
+  }, {
+    "name": "Песня о стоматологе"
+  }, {
+    "name": "Про козла"
+  }, {
+    "name": "Бэрримор"
+  }, {
+    "name": "Асассин"
+  }, {
+    "name": "Память"
+  }]
 }, {
   "albumId": 3,
   "albumName": "Зла не хватает",
   "albumYear": 2011, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_2dbef7f2b521404188d11c3f79d93665.jpg/v1/fill/w_343,h_343,al_c,q_80,usm_0.66_1.00_0.01/7abb88_2dbef7f2b521404188d11c3f79d93665.webp",
-  "albumMedianColor": "#ee3c32"
+  "albumMedianColor": "#ee3c32",
+  "tracks": [{ "name": "Мы едем… jedem das Seine…" }, { "name": "Проси!" }, { "name": "2 грамма гаша" },{ "name": "Вторая группа" },{ "name": "Тюремная" },{ "name": "Советская" },{ "name": "Холодильник-холодец" },{ "name": "Гашиш и дети" },{ "name": "Казацкая" },{ "name": "Юрка" },{ "name": "Люберецкие карлицы" },{ "name": "Отчего ты грустна, моя милая?" },{ "name": "Гитлер" },{ "name": "Зла не хватает" }]
 }, {
   "albumId": 4,
   "albumName": "Запощщу",
   "albumYear": 2012, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_3689a94c82574adbb197ec07ec8fcbcc.jpg/v1/fill/w_343,h_343,al_c,q_80,usm_0.66_1.00_0.01/7abb88_3689a94c82574adbb197ec07ec8fcbcc.webp",
-  "albumMedianColor": "#7b7465"
+  "albumMedianColor": "#7b7465",
+  "tracks": [{ "name": "Люда" },{ "name": "Отчим" },{ "name": "Напишу" },{ "name": "Зона" },{ "name": "Трава" },{ "name": "Цаца" },{ "name": "Раппопопорт" },{ "name": "Дорога" },{ "name": "Запощщу" },{ "name": "Я с тобою..." },{ "name": "Женщина-мудак" },{ "name": "Там, где ветки" }]
 }, {
   "albumId": 5,
   "albumName": "Мы вышли покурить на 17 лет",
   "albumYear": 2012, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_f43770ecce26429d90e1f514a7038fa4.jpg/v1/fill/w_346,h_346,al_c,q_80,usm_0.66_1.00_0.01/7abb88_f43770ecce26429d90e1f514a7038fa4.webp",
-  "albumMedianColor": "#d4ceac"
+  "albumMedianColor": "#d4ceac",
+  "tracks": [{"name":"Остановите свингер-пати"},{"name":"Офисная"},{"name":"Подонок гуляет"},{"name":"Выблядок"},{"name":"Полюбил"},{"name":"Дольщик"},{"name":"Сентиментальный марш"},{"name":"Ледокол Красин"},{"name":"Сколько на свете хороших друзей"},{"name":"Летела речка"},{"name":"Чертово колесо"},{"name":"Лучший"},{"name":"Я с хирургами"},{"name":"Мы вышли покурить на 17 лет"},{"name":"Поездка в Непал"},{"name":"Он меня любил, любила я его"},{"name":"Пассионарная"}]
 }, {
   "albumId": 6,
   "albumName": "Дом и краски",
   "albumYear": 2013, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_64d0619e2a97489b9101bc68db226f62.jpg/v1/fill/w_348,h_345,al_c,q_80,usm_0.66_1.00_0.01/7abb88_64d0619e2a97489b9101bc68db226f62.webp",
-  "albumMedianColor": "#536c83"
+  "albumMedianColor": "#536c83",
+  "tracks": [{"name": "Кровавый режим"},{"name": "Солдатская"},{"name": "На стрессе"},{"name": "Маленький автобус"},{"name": "Песня о медведях"},{"name": "Восстание бормашин"},{"name": "Бим-бом"},{"name": "Дом и краски"},{"name": "Ассоль не срет"},{"name": "Прошедшее время"},{"name": "Пой, цыган!"},{"name": "Маргинальный роман"}]
 }, {
   "albumId": 7,
   "albumName": "Жалобная книга",
   "albumYear": 2014, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_6bed67b36edf462d8d3f772c277f3460.jpg/v1/fill/w_350,h_347,al_c,q_80,usm_0.66_1.00_0.01/7abb88_6bed67b36edf462d8d3f772c277f3460.webp",
-  "albumMedianColor": "#480d0d"
+  "albumMedianColor": "#480d0d",
+  "tracks": [{"name": "Несуществующая песня"},{"name": "Туристическая"},{"name": "Скандинавская-мифологическая"},{"name": "Жалобная книга"},{"name": "Рисовали заклинанья"},{"name": "Я умею звонить"},{"name": "Шаманская"},{"name": "Запасная"},{"name": "Одноместное сердце"},{"name": "Нахуй эти сны"},{"name": "Оркская"},{"name": "Гностическая"}]
 }, {
   "albumId": 8,
   "albumName": "Рагнарёк",
   "albumYear": 2015, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_da477d5468144f7b9180a4c34ca6f1f0.jpg/v1/fill/w_349,h_349,al_c,q_80,usm_0.66_1.00_0.01/7abb88_da477d5468144f7b9180a4c34ca6f1f0.webp",
-  "albumMedianColor": "#8b543c"
+  "albumMedianColor": "#8b543c", 
+  "tracks": [{"name": "Дембельская"},{"name": "Чёрный полковник"},{"name": "Рагнарёк"},{"name": "Хуёвая баба"},{"name": "Похороны"},{"name": "Андрей июльских дней"},{"name": "Комитет по защите"},{"name": "Апокалиптическая"},{"name": "Рамштайн, циклодол и ислам"},{"name": "Сатанистская"},{"name": "Ростропович"},{"name": "Школьная"}]
 }, {
   "albumId": 9,
   "albumName": "В светлом ахуе",
