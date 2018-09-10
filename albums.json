@@ -5,45 +5,65 @@
   "albumCover": "https://static.wixstatic.com/media/7abb88_385118cef02345f898d00d4707deedd6.jpg/v1/fill/w_345,h_345,al_c,q_80,usm_0.66_1.00_0.01/7abb88_385118cef02345f898d00d4707deedd6.webp",
   "albumMedianColor": "#451e1c",
   "tracks": [{
-    "name": "Акуджава"
+    "name": "Акуджава",
+	"url": "http://maksimn.github.io/elizarov/notebook/akudzhava.mp3"
   }, {
-    "name": "Матрица"
+    "name": "Матрица",
+	"url": "http://maksimn.github.io/elizarov/notebook/matritsa.mp3"
   }, {
-    "name": "Буккакэ (Хуй на рыло)"
+    "name": "Буккакэ (Хуй на рыло)",
+	"url": "http://maksimn.github.io/elizarov/notebook/bukakke.mp3"
   }, {
-    "name": "Ты мне всралась!"
+    "name": "Ты мне всралась!",
+	"url": "http://maksimn.github.io/elizarov/notebook/ty_mne_vsralas.mp3"
   }, {
-    "name": "Воин господень"
+    "name": "Воин господень",
+	"url": "http://maksimn.github.io/elizarov/notebook/voin_gospoden.mp3"
   }, {
-    "name": "Ноутбук"
+    "name": "Ноутбук",
+	"url": "http://maksimn.github.io/elizarov/notebook/noutbuk.mp3"
   }, {
-    "name": "Девушка с Проспекта Мира"
+    "name": "Девушка с Проспекта Мира",
+	"url": "http://maksimn.github.io/elizarov/notebook/devuska_s_pr_mira.mp3"
   }, {
-    "name": "У меня"
+    "name": "У меня",
+	"url": "http://maksimn.github.io/elizarov/notebook/u_menya.mp3"
   }, {
-    "name": "Грядущий Хам"
+    "name": "Грядущий Хам",
+	"url": "http://maksimn.github.io/elizarov/notebook/gryadushiy_ham.mp3"
   }, {
-    "name": "Моя мать Ева Браун"
+    "name": "Моя мать Ева Браун",
+	"url": "http://maksimn.github.io/elizarov/notebook/moya_mat_eve_braun.mp3"
   }, {
-    "name": "Добрый маньяк Тихон"
+    "name": "Добрый маньяк Тихон",
+	"url": "http://maksimn.github.io/elizarov/notebook/dobryi_maniak_tihon.mp3"
   }, {
-    "name": "Тополиный пух"
+    "name": "Тополиный пух",
+	"url": "http://maksimn.github.io/elizarov/notebook/topolinyi_puh.mp3"
   }, {
-    "name": "Ласточка"
+    "name": "Ласточка",
+	"url": "http://maksimn.github.io/elizarov/notebook/lastochka.mp3"
   }, {
-    "name": "Кондуктор"
+    "name": "Кондуктор",
+	"url": "http://maksimn.github.io/elizarov/notebook/conductor.mp3"
   }, {
-    "name": "Рифеншталь"
+    "name": "Рифеншталь",
+	"url": "http://maksimn.github.io/elizarov/notebook/rifenshtal.mp3"
   }, {
-    "name": "Паталогоанатом"
+    "name": "Паталогоанатом",
+	"url": "http://maksimn.github.io/elizarov/notebook/patologoanatom.mp3"
   }, {
-    "name": "Эсэсовская лирическая"
+    "name": "Эсэсовская лирическая",
+	"url": "http://maksimn.github.io/elizarov/notebook/esesovskaya_lirisheskaya.mp3"
   }, {
-    "name": "Надежда"
+    "name": "Надежда",
+	"url": "http://maksimn.github.io/elizarov/notebook/nadezhda.mp3"
   }, {
-    "name": "Не забуду никогда"
+    "name": "Не забуду никогда",
+	"url": "http://maksimn.github.io/elizarov/notebook/ne_zabudu_nikogda.mp3"
   }, {
-    "name": "Анна"
+    "name": "Анна",
+	"url": "http://maksimn.github.io/elizarov/notebook/anna.mp3"
   }]
 }, {
   "albumId": 2,
@@ -51,29 +71,41 @@
   "albumYear": 2011, "albumCover":"https://static.wixstatic.com/media/7abb88_93cfccdfa6874aa2a063425ffbdad9c4.jpg/v1/fill/w_357,h_347,al_c,q_80,usm_0.66_1.00_0.01/7abb88_93cfccdfa6874aa2a063425ffbdad9c4.webp",
   "albumMedianColor": "#bcbebd",
   "tracks": [{
-    "name": "Без ансамбля"
+    "name": "Без ансамбля",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/bez_ansamblya.mp3"
   }, {
-    "name": "Антифашистская"
+    "name": "Антифашистская",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/antifashistskaya.mp3"
   }, {
-    "name": "Хуевое место"
+    "name": "Хуевое место",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/huevoe_mesto.mp3"
   }, {
-    "name": "Я теперь Чикатило"
+    "name": "Я теперь Чикатило",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/chikatilo.mp3"
   }, {
-    "name": "Романс"
+    "name": "Романс",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/romans.mp3"
   }, {
-    "name": "Песня про жиголо"
+    "name": "Песня про жиголо",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/zhigolo.mp3"
   }, {
-    "name": "Не додумалась встать на колени"
+    "name": "Не додумалась встать на колени",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/ne_dodumalas_vstat.mp3"
   }, {
-    "name": "Песня о стоматологе"
+    "name": "Песня о стоматологе",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/stomatolog.mp3"
   }, {
-    "name": "Про козла"
+    "name": "Про козла",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/pro_kozla.mp3"
   }, {
-    "name": "Бэрримор"
+    "name": "Бэрримор",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/berrimor.mp3"
   }, {
-    "name": "Асассин"
+    "name": "Асассин",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/assasin.mp3"
   }, {
-    "name": "Память"
+    "name": "Память",
+	"url": "http://maksimn.github.io/elizarov/pro_kozla/pamyat.mp3"
   }]
 }, {
   "albumId": 3,
@@ -81,42 +113,115 @@
   "albumYear": 2011, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_2dbef7f2b521404188d11c3f79d93665.jpg/v1/fill/w_343,h_343,al_c,q_80,usm_0.66_1.00_0.01/7abb88_2dbef7f2b521404188d11c3f79d93665.webp",
   "albumMedianColor": "#ee3c32",
-  "tracks": [{ "name": "Мы едем… jedem das Seine…" }, { "name": "Проси!" }, { "name": "2 грамма гаша" },{ "name": "Вторая группа" },{ "name": "Тюремная" },{ "name": "Советская" },{ "name": "Холодильник-холодец" },{ "name": "Гашиш и дети" },{ "name": "Казацкая" },{ "name": "Юрка" },{ "name": "Люберецкие карлицы" },{ "name": "Отчего ты грустна, моя милая?" },{ "name": "Гитлер" },{ "name": "Зла не хватает" }]
+  "tracks": [{ "name": "Мы едем… jedem das Seine…", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/myedemdasseine.mp3" }, 
+  { "name": "Проси!", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/prosi.mp3" }, 
+  { "name": "2 грамма гаша", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/2ggasha.mp3" },
+  { "name": "Вторая группа", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/vtorayagruppa.mp3" },
+  { "name": "Тюремная", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/turemnaya.mp3" },
+  { "name": "Советская", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/sovetskaya.mp3" },
+  { "name": "Холодильник-холодец", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/holodilnikholodec.mp3" },
+  { "name": "Гашиш и дети", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/detiigashish.mp3" },
+  { "name": "Казацкая", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/kazatskayapesnya.mp3" },
+  { "name": "Юрка", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/jurka.mp3" },
+  { "name": "Люберецкие карлицы", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/karlicy.mp3" },
+  { "name": "Отчего ты грустна, моя милая?", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/ot4egotigrustna.mp3" },
+  { "name": "Гитлер", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/hitler.mp3" },
+  { "name": "Зла не хватает", "url": "http://maksimn.github.io/elizarov/zla_ne_hvataet/zlanehvataet.mp3" }]
 }, {
   "albumId": 4,
   "albumName": "Запощщу",
   "albumYear": 2012, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_3689a94c82574adbb197ec07ec8fcbcc.jpg/v1/fill/w_343,h_343,al_c,q_80,usm_0.66_1.00_0.01/7abb88_3689a94c82574adbb197ec07ec8fcbcc.webp",
   "albumMedianColor": "#7b7465",
-  "tracks": [{ "name": "Люда" },{ "name": "Отчим" },{ "name": "Напишу" },{ "name": "Зона" },{ "name": "Трава" },{ "name": "Цаца" },{ "name": "Раппопопорт" },{ "name": "Дорога" },{ "name": "Запощщу" },{ "name": "Я с тобою..." },{ "name": "Женщина-мудак" },{ "name": "Там, где ветки" }]
+  "tracks": [{ "name": "Люда", "url": "http://maksimn.github.io/elizarov/zaposchy/lyuda.mp3" },
+  { "name": "Отчим", "url": "http://maksimn.github.io/elizarov/zaposchy/otchim.mp3" },
+  { "name": "Напишу", "url": "http://maksimn.github.io/elizarov/zaposchy/napishu.mp3" },
+  { "name": "Зона", "url": "http://maksimn.github.io/elizarov/zaposchy/zona.mp3" },
+  { "name": "Трава", "url": "http://maksimn.github.io/elizarov/zaposchy/trava.mp3" },
+  { "name": "Цаца", "url": "http://maksimn.github.io/elizarov/zaposchy/tsatsa.mp3" },
+  { "name": "Раппопопорт", "url": "http://maksimn.github.io/elizarov/zaposchy/rapoport.mp3" },
+  { "name": "Дорога", "url": "http://maksimn.github.io/elizarov/zaposchy/doroga.mp3" },
+  { "name": "Запощщу", "url": "http://maksimn.github.io/elizarov/zaposchy/zaposchyu.mp3" },
+  { "name": "Я с тобою...", "url": "http://maksimn.github.io/elizarov/zaposchy/ya_s_toboyu.mp3" },
+  { "name": "Женщина-мудак", "url": "http://maksimn.github.io/elizarov/zaposchy/zhenshina_mudak.mp3" },
+  { "name": "Там, где ветки", "url": "http://maksimn.github.io/elizarov/zaposchy/tam_gde_vetki.mp3" }]
 }, {
   "albumId": 5,
   "albumName": "Мы вышли покурить на 17 лет",
   "albumYear": 2012, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_f43770ecce26429d90e1f514a7038fa4.jpg/v1/fill/w_346,h_346,al_c,q_80,usm_0.66_1.00_0.01/7abb88_f43770ecce26429d90e1f514a7038fa4.webp",
   "albumMedianColor": "#d4ceac",
-  "tracks": [{"name":"Остановите свингер-пати"},{"name":"Офисная"},{"name":"Подонок гуляет"},{"name":"Выблядок"},{"name":"Полюбил"},{"name":"Дольщик"},{"name":"Сентиментальный марш"},{"name":"Ледокол Красин"},{"name":"Сколько на свете хороших друзей"},{"name":"Летела речка"},{"name":"Чертово колесо"},{"name":"Лучший"},{"name":"Я с хирургами"},{"name":"Мы вышли покурить на 17 лет"},{"name":"Поездка в Непал"},{"name":"Он меня любил, любила я его"},{"name":"Пассионарная"}]
+  "tracks": [{"name":"Остановите свингер-пати", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/08_Ostanovite_swinger-party.mp3"},
+  {"name":"Офисная", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/09_Oficenaya.mp3"},
+  {"name":"Подонок гуляет", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/11_Podonok_gulyaet.mp3"},
+  {"name":"Выблядок", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/01_Vibliadok.mp3"},
+  {"name":"Полюбил", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/13_Polubil.mp3"},
+  {"name":"Дольщик", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/02_Dolshik.mp3"},
+  {"name":"Сентиментальный марш", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/14_Sentimentalny_marsh.mp3"},
+  {"name":"Ледокол Красин", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/03_Ledokol_Krasin.mp3"},
+  {"name":"Сколько на свете хороших друзей", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/15_Skolko_na_svete_khoroshikh_druzei.mp3"},
+  {"name":"Летела речка", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/04_Letela_re4ka.mp3"},
+  {"name":"Чертово колесо", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/16_4ertovo_koleso.mp3"},
+  {"name":"Лучший", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/05_Lu4shy.mp3"},
+  {"name":"Я с хирургами", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/17_Ya_s_khirurgami.mp3"},
+  {"name":"Мы вышли покурить на 17 лет", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/06_Mi_vishli_pokurit_na_17_let.mp3"},
+  {"name":"Поездка в Непал", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/12_Poezdka_v_Nepal.mp3"},
+  {"name":"Он меня любил, любила я его", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/07_On_menya_lubil_lubila_ya_yego.mp3"},
+  {"name":"Пассионарная", "url": "http://maksimn.github.io/elizarov/my_vyshli_pokurit_na_17_let/10_Passionarnaya.mp3"}]
 }, {
   "albumId": 6,
   "albumName": "Дом и краски",
   "albumYear": 2013, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_64d0619e2a97489b9101bc68db226f62.jpg/v1/fill/w_348,h_345,al_c,q_80,usm_0.66_1.00_0.01/7abb88_64d0619e2a97489b9101bc68db226f62.webp",
   "albumMedianColor": "#536c83",
-  "tracks": [{"name": "Кровавый режим"},{"name": "Солдатская"},{"name": "На стрессе"},{"name": "Маленький автобус"},{"name": "Песня о медведях"},{"name": "Восстание бормашин"},{"name": "Бим-бом"},{"name": "Дом и краски"},{"name": "Ассоль не срет"},{"name": "Прошедшее время"},{"name": "Пой, цыган!"},{"name": "Маргинальный роман"}]
+  "tracks": [{"name": "Кровавый режим","url": "http://maksimn.github.io/elizarov/dom_i_kraski/krovavyi_regim.mp3" },
+  {"name": "Солдатская","url": "http://maksimn.github.io/elizarov/dom_i_kraski/soldatskaya.mp3"},
+  {"name": "На стрессе","url": "http://maksimn.github.io/elizarov/dom_i_kraski/na_stresse.mp3"},
+  {"name": "Маленький автобус","url": "http://maksimn.github.io/elizarov/dom_i_kraski/malenkiy_avtobus.mp3"},
+  {"name": "Песня о медведях","url": "http://maksimn.github.io/elizarov/dom_i_kraski/pesnya_o_medvedyah.mp3"},
+  {"name": "Восстание бормашин","url": "http://maksimn.github.io/elizarov/dom_i_kraski/vosstanie_bormashin.mp3"},
+  {"name": "Бим-бом","url": "http://maksimn.github.io/elizarov/dom_i_kraski/bim_bom.mp3"},
+  {"name": "Дом и краски","url": "http://maksimn.github.io/elizarov/dom_i_kraski/dom_i_kraski.mp3"},
+  {"name": "Ассоль не срет","url": "http://maksimn.github.io/elizarov/dom_i_kraski/assol_ne_sret.mp3"},
+  {"name": "Прошедшее время","url": "http://maksimn.github.io/elizarov/dom_i_kraski/proshedshee_vremya.mp3"},
+  {"name": "Пой, цыган!","url": "http://maksimn.github.io/elizarov/dom_i_kraski/poi_tsygan.mp3"},
+  {"name": "Маргинальный роман","url": "http://maksimn.github.io/elizarov/dom_i_kraski/eto_byl_marginalnyi_roman.mp3"}]
 }, {
   "albumId": 7,
   "albumName": "Жалобная книга",
   "albumYear": 2014, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_6bed67b36edf462d8d3f772c277f3460.jpg/v1/fill/w_350,h_347,al_c,q_80,usm_0.66_1.00_0.01/7abb88_6bed67b36edf462d8d3f772c277f3460.webp",
   "albumMedianColor": "#480d0d",
-  "tracks": [{"name": "Несуществующая песня"},{"name": "Туристическая"},{"name": "Скандинавская-мифологическая"},{"name": "Жалобная книга"},{"name": "Рисовали заклинанья"},{"name": "Я умею звонить"},{"name": "Шаманская"},{"name": "Запасная"},{"name": "Одноместное сердце"},{"name": "Нахуй эти сны"},{"name": "Оркская"},{"name": "Гностическая"}]
+  "tracks": [{"name": "Несуществующая песня","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/nesuschestvuyuschaya.mp3"},
+  {"name": "Туристическая","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/turisticheskaya.mp3"},
+  {"name": "Скандинавская-мифологическая","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/skandinavskaya_mifologicheskaya.mp3"},
+  {"name": "Жалобная книга","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/zhalobnaya_kniga.mp3"},
+  {"name": "Рисовали заклинанья","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/risovali_zaklinaniya.mp3"},
+  {"name": "Я умею звонить","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/ya_umeyu_zvonit.mp3"},
+  {"name": "Шаманская","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/shamanskaya.mp3"},
+  {"name": "Запасная","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/zapasnaya.mp3"},
+  {"name": "Одноместное сердце","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/odnomestnoe_serdtse.mp3"},
+  {"name": "Нахуй эти сны","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/na_hui_eti_sny.mp3"},
+  {"name": "Оркская","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/orkskaya.mp3"},
+  {"name": "Гностическая","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/gnosticheskaya.mp3"}]
 }, {
   "albumId": 8,
   "albumName": "Рагнарёк",
   "albumYear": 2015, 
   "albumCover":"https://static.wixstatic.com/media/7abb88_da477d5468144f7b9180a4c34ca6f1f0.jpg/v1/fill/w_349,h_349,al_c,q_80,usm_0.66_1.00_0.01/7abb88_da477d5468144f7b9180a4c34ca6f1f0.webp",
   "albumMedianColor": "#8b543c", 
-  "tracks": [{"name": "Дембельская"},{"name": "Чёрный полковник"},{"name": "Рагнарёк"},{"name": "Хуёвая баба"},{"name": "Похороны"},{"name": "Андрей июльских дней"},{"name": "Комитет по защите"},{"name": "Апокалиптическая"},{"name": "Рамштайн, циклодол и ислам"},{"name": "Сатанистская"},{"name": "Ростропович"},{"name": "Школьная"}]
+  "tracks": [{"name": "Дембельская","url": "http://maksimn.github.io/elizarov/ragnarok/dembelskaya.mp3" },
+  {"name": "Чёрный полковник","url": "http://maksimn.github.io/elizarov/ragnarok/chernyi_polkovnik.mp3"},
+  {"name": "Рагнарёк","url": "http://maksimn.github.io/elizarov/ragnarok/ragnarok.mp3"},
+  {"name": "Хуёвая баба","url": "http://maksimn.github.io/elizarov/ragnarok/huevaya_baba.mp3"},
+  {"name": "Похороны","url": "http://maksimn.github.io/elizarov/ragnarok/pohorony.mp3"},
+  {"name": "Андрей июльских дней","url": "http://maksimn.github.io/elizarov/ragnarok/andrey.mp3"},
+  {"name": "Комитет по защите","url": "http://maksimn.github.io/elizarov/ragnarok/komitet_po_zaschite.mp3"},
+  {"name": "Апокалиптическая","url": "http://maksimn.github.io/elizarov/ragnarok/apokalipticheskaya.mp3"},
+  {"name": "Рамштайн, циклодол и ислам","url": "http://maksimn.github.io/elizarov/ragnarok/rammstein.mp3"},
+  {"name": "Сатанистская","url": "http://maksimn.github.io/elizarov/ragnarok/satanistskaya.mp3"},
+  {"name": "Ростропович","url": "http://maksimn.github.io/elizarov/ragnarok/rostropovich.mp3"},
+  {"name": "Школьная","url": "http://maksimn.github.io/elizarov/ragnarok/shkolnaya.mp3"}]
 }, {
   "albumId": 9,
   "albumName": "В светлом ахуе",
