@@ -1,0 +1,55 @@
+[{
+  "name": "Проза",
+  "type": "Повесть, рассказы",
+  "year": "2000",
+  "url_to_store": "",
+  "cover_url": "https://blog.springshare.com/wp-content/uploads/2010/02/gc-md.gif"
+},{
+  "name": "Ногти",
+  "type": "Повесть, рассказы",
+  "year": "2001",
+  "url_to_store": "",
+  "cover_url": "https://irecommend.ru/sites/default/files/product-images/4449/00.png"
+},{
+  "name": "Pasternak",
+  "type": "Роман",
+  "year": "2003",
+  "url_to_store": "",
+  "cover_url": "https://i.livelib.ru/boocover/1000315110/200/b139/Mihail_Elizarov__Pasternak.jpg"
+},{
+  "name": "Красная плёнка",
+  "type": "Сборник рассказов",
+  "year": "2005",
+  "url_to_store": "",
+  "cover_url": "https://www.e-reading.club/cover/95/95263.jpg"
+},{
+  "name": "Библиотекарь",
+  "type": "Роман",
+  "year": "2007",
+  "url_to_store": "",
+  "cover_url": "https://i.livelib.ru/boocover/1000320584/200/5810/Mihail_Elizarov__Bibliotekar.jpg"
+},{
+  "name": "Кубики",
+  "type": "Рассказы",
+  "year": "2008",
+  "url_to_store": "",
+  "cover_url": "https://i.livelib.ru/boocover/1000311720/200/5859/Mihail_Elizarov__Kubiki_sbornik.jpg"
+},{
+  "name": "Мультики",
+  "type": "Роман",
+  "year": "2010",
+  "url_to_store": "",
+  "cover_url": "https://i.livelib.ru/boocover/1001093871/200/ec9a/Mihail_Elizarov__Multiki.jpg"
+},{
+  "name": "Бураттини. Фашизм прошёл",
+  "type": "Эссе",
+  "year": "2011",
+  "url_to_store": "",
+  "cover_url": "https://ozon-st.cdn.ngenix.net/multimedia/1003207808.jpg"
+},{
+  "name": "Мы вышли покурить на 17 лет...",
+  "type": "Сборник рассказов",
+  "year": "2012",
+  "url_to_store": "",
+  "cover_url": "https://j.livelib.ru/boocover/1000565906/200/7a1e/Mihail_Elizarov__My_vyshli_pokurit_na_17_let..._sbornik.jpg"
+}]
