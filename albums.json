@@ -307,4 +307,47 @@
     "name": "Вратарь",
 	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/15_vratar.mp3", "duration": "2:58"
   }]
+}, {
+  "albumId": 10,
+  "albumName": "Солдатский гранж",
+  "albumYear": 2018, 
+  "albumCover":"http://maksimn.github.io/elizarov/soldatskiy_granzh/cover.jpg",
+  "albumMedianColor": "#b3a48c",
+  "tracks": [{
+	"name": "Самогон",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/01_samogon.mp3", "duration": "3:13"
+  }, {
+	"name": "А ты замужем",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/02_a_ty_zamuzhem.mp3", "duration": "2:09"
+  }, {
+	"name": "Нано-жизнь",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/03_nano_zhizn.mp3", "duration": "3:51"
+  }, {
+	"name": "Селигер",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/04_seliger.mp3", "duration": "3:29"
+  }, {
+	"name": "Пидарасы одиночества",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/05_pidarasy.mp3", "duration": "3:02"
+  }, {
+	"name": "Спутаться с женщиной мутной и гиблой",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/06_sputatsya_s_zenschinoy.mp3", "duration": "3:00"
+  }, {
+	"name": "Жизнь долгая как ревер",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/07_zhizn_dolgaya.mp3", "duration": "2:43"
+  }, {
+	"name": "Верховный удмурт",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/08_verhovnyi_udmurt.mp3", "duration": "2:28"
+  }, {
+	"name": "Мастер Илья",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/09_master_ilya.mp3", "duration": "2:35"
+  }, {
+	"name": "Мама-Гуантанама",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/10_mama_guantanama.mp3", "duration": "3:13"
+  }, {
+	"name": "Солдатский гранж",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/11_soldatskiy_granzh.mp3", "duration": "2:31"
+  }, {
+	"name": "Майору дохуя приходит писем",
+	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/12_mayoru_dohuya_prihodit.mp3", "duration": "3:00"
+  } ]
 }]
