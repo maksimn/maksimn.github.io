@@ -1,0 +1,118 @@
+﻿[{
+    "section": {
+    	"id": 1,
+		"name": "Лучшие песни",
+		"picture_url": "http://image3.thematicnews.com/uploads/topics/preview/00/08/17/35/e24e88d577_256crop.jpg",
+		"color": "#ff0000",
+		"tracks": [{
+			    "id": 1,
+				"name": "Священная война",
+				"url": "http://www.sovmusic.ru/m32/saintwar.mp3",
+				"duration": "2:58",
+				"year": 1941
+			}, {
+			    "id": 2,
+				"name": "Марш артиллеристов",
+				"url": "http://www.sovmusic.ru/m32/marartil.mp3",
+				"duration": "2:14",
+				"year": 1943
+			},{
+			    "id": 3,
+				"name": "И вновь продолжается бой",
+				"url": "http://www.sovmusic.ru/m32/prodboi4.mp3",
+				"duration": "3:40",
+				"year": 1974
+			},{
+			    "id": 4,
+				"name": "Марш танкистов",
+				"url": "http://www.sovmusic.ru/m32/martank.mp3",
+				"duration": "2:43",
+				"year": 1939
+		    },{
+			    "id": 5,
+				"name": "Катюша",
+				"url": "http://www.sovmusic.ru/m32/katyusha.mp3",
+				"duration": "2:36",
+				"year": 1938
+		    },{
+			    "id": 6,
+				"name": "Гимн СССР",
+				"url": "http://www.sovmusic.ru/m32/ussr44.mp3",
+				"duration": "3:08",
+				"year": 1944
+			},{
+			    "id": 7,
+				"name": "Белая армия, чёрный барон",
+				"url": "http://www.sovmusic.ru/m32/belarmia.mp3",
+				"duration": "2:43",
+				"year": 1920
+			},{
+			    "id": 8,
+				"name": "Варяг",
+				"url": "http://www.sovmusic.ru/m32/varyag.mp3",
+				"duration": "3:21",
+				"year": 1950
+			}, {
+			    "id": 9,
+				"name": "С чего начинается Родина",
+				"url": "http://www.sovmusic.ru/m32/nachrod.mp3",
+				"duration": "2:24",
+				"year": 1968
+			},{
+			    "id": 10,
+				"name": "Время, вперёд!",
+				"url": "http://www.sovmusic.ru/m32/vrvpered.mp3",
+				"duration": "3:31",
+				"year": 1965
+			},{
+			    "id": 11,
+				"name": "Авиамарш",
+				"url": "http://www.sovmusic.ru/m32/marshair.mp3",
+				"duration": "2:26",
+				"year": 1931
+			},{
+			    "id": 12,
+				"name": "Если завтра война",
+				"url": "http://www.sovmusic.ru/m32/zavvoina.mp3",
+				"duration": "2:44",
+				"year": 1938
+			}
+		]
+    }
+}, 
+{
+    "section": {
+    	"id": 2,
+		"name": "Популярные",
+		"picture_url": "https://cdn4.iconfinder.com/data/icons/music-kit/32/pop-128.png",
+		"color": "#66ccff",
+		"tracks": []
+    }
+}, 
+{
+    "section": {
+    	"id": 3,
+		"name": "Военные песни",
+		"picture_url": "http://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/war-thunder-icon.png",
+		"color": "#4d4d00",
+		"tracks": []
+    }
+}, 
+{
+    "section": {
+    	"id": 4,
+		"name": "Любовная лирика",
+		"picture_url": "https://cdn.iconscout.com/icon/free/png-256/heart-like-love-card-game-favorite-37955.png",
+		"color": "#ff6666",
+		"tracks": []
+    }
+}, 
+{
+    "section": {
+    	"id": 5,
+		"name": "Песни о Ленине",
+		"picture_url": "https://cdn4.iconfinder.com/data/icons/political-signs/154/political-sign-communism-red-label-128.png",
+		"color": "#661a00",
+		"tracks": []
+    }
+}]
