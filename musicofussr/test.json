@@ -86,7 +86,37 @@
 		"name": "Популярные",
 		"picture_url": "https://cdn4.iconfinder.com/data/icons/music-kit/32/pop-128.png",
 		"color": "#66ccff",
-		"tracks": []
+		"tracks": [{
+			    "id": 14,
+				"name": "Тестовое название 1",
+				"url": "http://www.sovmusic.ru/m32/martank.mp3",
+				"duration": "2:43",
+				"year": 1939
+		    }, {
+			    "id": 15,
+				"name": "Тестовое название 2",
+				"url": "http://www.sovmusic.ru/m32/martank.mp3",
+				"duration": "2:43",
+				"year": 1939
+		    }, {
+			    "id": 16,
+				"name": "Тестовое название 3",
+				"url": "http://www.sovmusic.ru/m32/martank.mp3",
+				"duration": "2:43",
+				"year": 1939
+		    }, {
+			    "id": 17,
+				"name": "Заполнитель без аудио",
+				"url": "",
+				"duration": "1:00",
+				"year": 2000
+		    }, {
+			    "id": 18,
+				"name": "Тестовое название 4",
+				"url": "http://www.sovmusic.ru/m32/martank.mp3",
+				"duration": "2:43",
+				"year": 1939
+		    }]
     }
 }, 
 {
