@@ -3,7 +3,7 @@
     	"id": 1,
 		"name": "Избранная двадцатка",
 		"picture_url": "http://maksimn.github.io/musicofussr/images/20.jpg",
-		"color": "#990000",
+		"color": "#ff0000",
 		"tracks": [
 			{"id": 1001,"name": "Священная война","url": "http://www.sovmusic.ru/m32/saintwar.mp3","duration": "2:58","year": 1941}, 
 			{"id": 1002,"name": "Москва майская","url": "http://www.sovmusic.ru/m32/moscmay.mp3","duration": "5:08","year": 0},
@@ -46,7 +46,7 @@
     	"id": 3,
 		"name": "Любовная лирика",
 		"picture_url": "http://maksimn.github.io/musicofussr/images/odingarm.jpg",
-		"color": "#ff8080",
+		"color": "#a2c3f9",
 		"tracks": [
 			{"id": 300,"name": "Сормовская лирическая","url": "http://www.sovmusic.ru/m32/sormovs1.mp3","duration": "3:16","year": 0}, 
 			{"id": 301,"name": "Одинокая гармонь","url": "http://www.sovmusic.ru/m32/odinoka2.mp3","duration": "3:07","year": 0}, 
