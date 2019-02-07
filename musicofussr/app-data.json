@@ -46,7 +46,7 @@
     	"id": 3,
 		"name": "Любовная лирика",
 		"picture_url": "http://maksimn.github.io/musicofussr/images/odingarm.jpg",
-		"color": "#a2c3f9",
+		"color": "#6b95db",
 		"tracks": [
 			{"id": 300,"name": "Сормовская лирическая","url": "http://www.sovmusic.ru/m32/sormovs1.mp3","duration": "3:16","year": 0}, 
 			{"id": 301,"name": "Одинокая гармонь","url": "http://www.sovmusic.ru/m32/odinoka2.mp3","duration": "3:07","year": 0}, 
