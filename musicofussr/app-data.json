@@ -3,7 +3,7 @@
     	"id": 1,
 		"name": "Избранная двадцатка",
 		"picture_url": "http://maksimn.github.io/musicofussr/images/20.jpg",
-		"color": "#с30705",
+		"color": "#c30705",
 		"tracks": [
 			{"id": 1001,"name": "Священная война","url": "http://www.sovmusic.ru/m32/saintwar.mp3","duration": "2:58","year": 1941}, 
 			{"id": 1002,"name": "Москва майская","url": "http://www.sovmusic.ru/m32/moscmay.mp3","duration": "5:08","year": 0},
@@ -65,7 +65,7 @@
     	"id": 4,
 		"name": "Революционные песни",
 		"picture_url": "http://maksimn.github.io/musicofussr/images/revo.jpg",
-		"color": "#сс0001",
+		"color": "#cc0001",
 		"tracks": [
 			{"id": 400,"name": "И вновь продолжается бой","url": "http://www.sovmusic.ru/m32/prodboi4.mp3","duration": "3:40","year": 1974},
 			{"id": 401,"name": "Белая армия, чёрный барон","url": "http://www.sovmusic.ru/m32/belarmia.mp3","duration": "2:43","year": 1920},
