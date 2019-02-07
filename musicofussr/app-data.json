@@ -3,7 +3,7 @@
     	"id": 1,
 		"name": "Избранная двадцатка",
 		"picture_url": "http://maksimn.github.io/musicofussr/images/20.jpg",
-		"color": "#ff0000",
+		"color": "#aa0000",
 		"tracks": [
 			{"id": 1001,"name": "Священная война","url": "http://www.sovmusic.ru/m32/saintwar.mp3","duration": "2:58","year": 1941}, 
 			{"id": 1002,"name": "Москва майская","url": "http://www.sovmusic.ru/m32/moscmay.mp3","duration": "5:08","year": 0},
@@ -64,7 +64,7 @@
     "section": {
     	"id": 4,
 		"name": "Революционные песни",
-		"picture_url": "http://maksimn.github.io/musicofussr/images/30s.jpeg",
+		"picture_url": "http://maksimn.github.io/musicofussr/images/revo.jpg",
 		"color": "#ff0000",
 		"tracks": [
 			{"id": 400,"name": "И вновь продолжается бой","url": "http://www.sovmusic.ru/m32/prodboi4.mp3","duration": "3:40","year": 1974},
@@ -80,7 +80,7 @@
     "section": {
     	"id": 5,
 		"name": "Песни тридцатых годов",
-		"picture_url": "http://maksimn.github.io/musicofussr/images/revo.jpeg",
+		"picture_url": "http://maksimn.github.io/musicofussr/images/30s.jpeg",
 		"color": "#897e82",
 		"tracks": [
 			{"id": 4,"name": "Марш танкистов","url": "http://www.sovmusic.ru/m32/martank.mp3","duration": "2:43","year": 1939},
