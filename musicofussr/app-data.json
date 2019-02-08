@@ -29,24 +29,10 @@
     }
 },{
     "section": {
-    	"id": 2,
-		"name": "Песни на иностранных языках",
-		"picture_url": "http://maksimn.github.io/musicofussr/images/gdr.png",
-		"color": "#8a3e00",
-		"tracks": [
-			{"id": 600,"name": "Эрнст Буш - Песня единого фронта","url": "http://www.sovmusic.ru/m32/pesnyae2.mp3","duration": "2:23","year": 0}, 
-			{"id": 601,"name": "Эрнст Буш - Тревожный марш","url": "http://www.sovmusic.ru/m32/derheiml.mp3","duration": "2:21","year": 0}, 
-			{"id": 602,"name": "Объединенный народ (Испанский и русский)","url": "http://www.sovmusic.ru/m32/elpuebl2.mp3","duration": "2:28","year": 0}, 
-			{"id": 603,"name": "Поль Робсон - Гимн СССР","url": "http://www.sovmusic.ru/m32/ussr_eng.mp3","duration": "3:54","year": 0},
-			{"id": 604,"name": "Одинокая гармонь (французская версия)","url": "http://www.sovmusic.ru/m32/odinoka6.mp3","duration": "2:17","year": 0}
-		]
-    }
-},{
-    "section": {
     	"id": 3,
 		"name": "Любовная лирика",
 		"picture_url": "http://maksimn.github.io/musicofussr/images/odingarm.jpg",
-		"color": "#6b95db",
+		"color": "#757a6e",
 		"tracks": [
 			{"id": 300,"name": "Сормовская лирическая","url": "http://www.sovmusic.ru/m32/sormovs1.mp3","duration": "3:16","year": 0}, 
 			{"id": 301,"name": "Одинокая гармонь","url": "http://www.sovmusic.ru/m32/odinoka2.mp3","duration": "3:07","year": 0}, 
@@ -60,20 +46,23 @@
 			{"id": 309,"name": "Что так сердце растревожено","url": "http://maksimn.github.io/musicofussr/tracks/chto_tak_serdtse.mp3","duration": "3:30","year": 0}
 		]
     }
-},{
+}, {
     "section": {
-    	"id": 4,
-		"name": "Революционные песни",
-		"picture_url": "http://maksimn.github.io/musicofussr/images/revo.jpg",
-		"color": "#cc0001",
+    	"id": 8,
+		"name": "Песни из кинофильмов",
+		"picture_url": "http://maksimn.github.io/musicofussr/images/volga.jpg",
+		"color": "#c8b8aa",
 		"tracks": [
-			{"id": 400,"name": "И вновь продолжается бой","url": "http://www.sovmusic.ru/m32/prodboi4.mp3","duration": "3:40","year": 1974},
-			{"id": 401,"name": "Белая армия, чёрный барон","url": "http://www.sovmusic.ru/m32/belarmia.mp3","duration": "2:43","year": 1920},
-			{"id": 402,"name": "Интернационал","url": "http://www.sovmusic.ru/m32/intern.mp3","duration": "3:51","year": 0},
-			{"id": 403,"name": "Варшавянка","url": "http://www.sovmusic.ru/m32/varshav.mp3","duration": "1:52","year": 0},
-			{"id": 404,"name": "Смело, товарищи, в ногу","url": "http://www.sovmusic.ru/m32/vnogu.mp3","duration": "2:05","year": 0},
-			{"id": 405,"name": "По долинам и по взгорьям","url": "http://www.sovmusic.ru/m32/pdolinam.mp3","duration": "2:22","year": 0},
-			{"id": 406,"name": "Песня о Щорсе","url": "http://www.sovmusic.ru/m32/pesnya22.mp3","duration": "3:46","year": 0}
+			{"id": 800,"name": "С чего начинается Родина","url": "http://www.sovmusic.ru/m32/nachrod.mp3","duration": "2:24","year": 1968},
+			{"id": 801,"name": "Время, вперёд!","url": "http://www.sovmusic.ru/m32/vrvpered.mp3","duration": "3:31","year": 1965},
+			{"id": 802,"name": "Гляжу в озера синие","url": "http://www.sovmusic.ru/m32/glyazhuv.mp3","duration": "3:13","year": 0},
+			{"id": 803,"name": "Каким ты был, так остался","url": "http://www.sovmusic.ru/m32/kakimti2.mp3","duration": "3:28","year": 0},
+			{"id": 804,"name": "Песня о тревожной молодости","url": "http://www.sovmusic.ru/m32/pesnyaot.mp3","duration": "3:51","year": 0},
+			{"id": 805,"name": "Марш веселых ребят","url": "http://www.sovmusic.ru/m32/marshve9.mp3","duration": "1:52","year": 0},
+			{"id": 806,"name": "Молодежная","url": "http://www.sovmusic.ru/m32/molodezh.mp3","duration": "2:14","year": 0},
+			{"id": 807,"name": "Мы шагаем","url": "http://www.sovmusic.ru/m32/mishagae.mp3","duration": "2:02","year": 0},
+			{"id": 808,"name": "Вставайте, люди русские (из х/ф \"Александр Невский\")","url": "http://www.sovmusic.ru/m32/vstavayt.mp3","duration": "1:55","year": 0},
+			{"id": 809,"name": "Весна идет","url": "http://www.sovmusic.ru/m32/vesnaidy.mp3","duration": "3:06","year": 0}
 		]
     }
 }, {
@@ -99,7 +88,7 @@
     	"id": 6,
 		"name": "Песни и музыка ВОВ",
 		"picture_url": "http://maksimn.github.io/musicofussr/images/1945.jpg",
-		"color": "#697030",
+		"color": "#736e6c",
 		"tracks": [
 			{"id": 1,"name": "Священная война","url": "http://www.sovmusic.ru/m32/saintwar.mp3","duration": "2:58","year": 1941},
 			{"id": 2,"name": "Марш артиллеристов","url": "http://www.sovmusic.ru/m32/marartil.mp3","duration": "2:14","year": 1943},
@@ -114,23 +103,34 @@
 			{"id": 107,"name": "В лесу прифронтовом","url": "http://www.sovmusic.ru/m32/v_lesu.mp3","duration": "3:04","year": 0}
 		]
     }
-}, {
+},{
     "section": {
-    	"id": 8,
-		"name": "Песни из кинофильмов",
-		"picture_url": "http://maksimn.github.io/musicofussr/images/volga.jpg",
-		"color": "#b2a290",
+    	"id": 2,
+		"name": "Песни на иностранных языках",
+		"picture_url": "http://maksimn.github.io/musicofussr/images/gdr.png",
+		"color": "#8a3e00",
 		"tracks": [
-			{"id": 800,"name": "С чего начинается Родина","url": "http://www.sovmusic.ru/m32/nachrod.mp3","duration": "2:24","year": 1968},
-			{"id": 801,"name": "Время, вперёд!","url": "http://www.sovmusic.ru/m32/vrvpered.mp3","duration": "3:31","year": 1965},
-			{"id": 802,"name": "Гляжу в озера синие","url": "http://www.sovmusic.ru/m32/glyazhuv.mp3","duration": "3:13","year": 0},
-			{"id": 803,"name": "Каким ты был, так остался","url": "http://www.sovmusic.ru/m32/kakimti2.mp3","duration": "3:28","year": 0},
-			{"id": 804,"name": "Песня о тревожной молодости","url": "http://www.sovmusic.ru/m32/pesnyaot.mp3","duration": "3:51","year": 0},
-			{"id": 805,"name": "Марш веселых ребят","url": "http://www.sovmusic.ru/m32/marshve9.mp3","duration": "1:52","year": 0},
-			{"id": 806,"name": "Молодежная","url": "http://www.sovmusic.ru/m32/molodezh.mp3","duration": "2:14","year": 0},
-			{"id": 807,"name": "Мы шагаем","url": "http://www.sovmusic.ru/m32/mishagae.mp3","duration": "2:02","year": 0},
-			{"id": 808,"name": "Вставайте, люди русские (из х/ф \"Александр Невский\")","url": "http://www.sovmusic.ru/m32/vstavayt.mp3","duration": "1:55","year": 0},
-			{"id": 809,"name": "Весна идет","url": "http://www.sovmusic.ru/m32/vesnaidy.mp3","duration": "3:06","year": 0}
+			{"id": 600,"name": "Эрнст Буш - Песня единого фронта","url": "http://www.sovmusic.ru/m32/pesnyae2.mp3","duration": "2:23","year": 0}, 
+			{"id": 601,"name": "Эрнст Буш - Тревожный марш","url": "http://www.sovmusic.ru/m32/derheiml.mp3","duration": "2:21","year": 0}, 
+			{"id": 602,"name": "Объединенный народ (Испанский и русский)","url": "http://www.sovmusic.ru/m32/elpuebl2.mp3","duration": "2:28","year": 0}, 
+			{"id": 603,"name": "Поль Робсон - Гимн СССР","url": "http://www.sovmusic.ru/m32/ussr_eng.mp3","duration": "3:54","year": 0},
+			{"id": 604,"name": "Одинокая гармонь (французская версия)","url": "http://www.sovmusic.ru/m32/odinoka6.mp3","duration": "2:17","year": 0}
+		]
+    }
+},{
+    "section": {
+    	"id": 4,
+		"name": "Революционные песни",
+		"picture_url": "http://maksimn.github.io/musicofussr/images/revo.jpg",
+		"color": "#cc0001",
+		"tracks": [
+			{"id": 400,"name": "И вновь продолжается бой","url": "http://www.sovmusic.ru/m32/prodboi4.mp3","duration": "3:40","year": 1974},
+			{"id": 401,"name": "Белая армия, чёрный барон","url": "http://www.sovmusic.ru/m32/belarmia.mp3","duration": "2:43","year": 1920},
+			{"id": 402,"name": "Интернационал","url": "http://www.sovmusic.ru/m32/intern.mp3","duration": "3:51","year": 0},
+			{"id": 403,"name": "Варшавянка","url": "http://www.sovmusic.ru/m32/varshav.mp3","duration": "1:52","year": 0},
+			{"id": 404,"name": "Смело, товарищи, в ногу","url": "http://www.sovmusic.ru/m32/vnogu.mp3","duration": "2:05","year": 0},
+			{"id": 405,"name": "По долинам и по взгорьям","url": "http://www.sovmusic.ru/m32/pdolinam.mp3","duration": "2:22","year": 0},
+			{"id": 406,"name": "Песня о Щорсе","url": "http://www.sovmusic.ru/m32/pesnya22.mp3","duration": "3:46","year": 0}
 		]
     }
 }]
