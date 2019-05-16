@@ -13,7 +13,7 @@
 	"url": "http://maksimn.github.io/elizarov/notebook/matritsa.mp3",
 	"duration": "3:19"
   }, {
-    "name": "Буккакэ (Хуй на рыло)",
+    "name": "Буккакэ (***в на рыло)",
 	"url": "http://maksimn.github.io/elizarov/notebook/bukakke.mp3",
 	"duration": "2:34"
   }, {
@@ -99,7 +99,7 @@
 	"url": "http://maksimn.github.io/elizarov/pro_kozla/antifashistskaya.mp3",
 	"duration": "3:23"
   }, {
-    "name": "Хуевое место",
+    "name": "****** место",
 	"url": "http://maksimn.github.io/elizarov/pro_kozla/huevoe_mesto.mp3",
 	"duration": "2:00"
   }, {
@@ -234,7 +234,7 @@
   {"name": "Шаманская","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/shamanskaya.mp3", "duration": "2:13"},
   {"name": "Запасная","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/zapasnaya.mp3", "duration": "2:24"},
   {"name": "Одноместное сердце","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/odnomestnoe_serdtse.mp3", "duration": "2:26"},
-  {"name": "Нахуй эти сны","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/na_hui_eti_sny.mp3", "duration": "1:58"},
+  {"name": "На*** эти сны","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/na_hui_eti_sny.mp3", "duration": "1:58"},
   {"name": "Оркская","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/orkskaya.mp3", "duration": "3:28"},
   {"name": "Гностическая","url": "http://maksimn.github.io/elizarov/Jalobnaya_kniga/gnosticheskaya.mp3", "duration": "2:21"}]
 }, {
@@ -246,7 +246,7 @@
   "tracks": [{"name": "Дембельская","url": "http://maksimn.github.io/elizarov/ragnarok/dembelskaya.mp3", "duration": "2:36" },
   {"name": "Чёрный полковник","url": "http://maksimn.github.io/elizarov/ragnarok/chernyi_polkovnik.mp3", "duration": "4:07"},
   {"name": "Рагнарёк","url": "http://maksimn.github.io/elizarov/ragnarok/ragnarok.mp3", "duration": "3:35"},
-  {"name": "Хуёвая баба","url": "http://maksimn.github.io/elizarov/ragnarok/huevaya_baba.mp3", "duration": "3:01"},
+  {"name": "****** баба","url": "http://maksimn.github.io/elizarov/ragnarok/huevaya_baba.mp3", "duration": "3:01"},
   {"name": "Похороны","url": "http://maksimn.github.io/elizarov/ragnarok/pohorony.mp3", "duration": "3:12"},
   {"name": "Андрей июльских дней","url": "http://maksimn.github.io/elizarov/ragnarok/andrey.mp3", "duration": "3:27"},
   {"name": "Комитет по защите","url": "http://maksimn.github.io/elizarov/ragnarok/komitet_po_zaschite.mp3", "duration": "2:55"},
@@ -257,7 +257,7 @@
   {"name": "Школьная","url": "http://maksimn.github.io/elizarov/ragnarok/shkolnaya.mp3", "duration": "2:56"}]
 }, {
   "albumId": 9,
-  "albumName": "В светлом ахуе",
+  "albumName": "В светлом ***",
   "albumYear": 2017, 
   "albumCover":"http://maksimn.github.io/elizarov/jpg/vsvetlom.jpg",
   "albumMedianColor": "#bd7062",
@@ -265,10 +265,10 @@
 	"name": "Трехрукая Маша",
 	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/1_trehrukaya_masha.mp3", "duration": "2:56"
   }, {
-    "name": "В светлом ахуе",
+    "name": "В светлом ****",
 	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/2_v_svetlom_ahue.mp3", "duration": "2:55"
   }, {
-    "name": "Еби и беги",
+    "name": "*** и беги",
 	"url": "http://maksimn.github.io/elizarov/V_svetlom_ahue/3_ebi_i_begi.mp3", "duration": "3:13"
   }, {
     "name": "Бескозырка",
@@ -326,7 +326,7 @@
 	"name": "Селигер",
 	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/04_seliger.mp3", "duration": "3:29"
   }, {
-	"name": "Пидарасы одиночества",
+	"name": "******** одиночества",
 	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/05_pi.mp3", "duration": "3:02"
   }, {
 	"name": "Спутаться с женщиной мутной и гиблой",
@@ -347,7 +347,7 @@
 	"name": "Солдатский гранж",
 	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/11_soldatskiy_granzh.mp3", "duration": "2:31"
   }, {
-	"name": "Майору дохуя приходит писем",
+	"name": "Майору ***** приходит писем",
 	"url": "http://maksimn.github.io/elizarov/soldatskiy_granzh/12_mayoru_dohuya_prihodit.mp3", "duration": "3:00"
   } ]
 }]
