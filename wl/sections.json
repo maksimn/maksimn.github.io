@@ -1,0 +1,49 @@
+[{
+    "sectionId": 1,
+    "sectionName": "Section 1A",
+    "sectionSubName": "Раздел 1A",
+    "sectionImageUrl": "https://via.placeholder.com/96/FFFF00/000000.png",
+    "sectionColor": "#451e1c"
+},{
+    "sectionId": 2,
+    "sectionName": "Section 2B",
+    "sectionSubName": "Раздел 2B",
+    "sectionImageUrl": "https://via.placeholder.com/96/cc45be/000000.png",
+    "sectionColor": "#bcbebd"
+},{
+    "sectionId": 3,
+    "sectionName": "Section 3C",
+    "sectionSubName": "Раздел 3C",
+    "sectionImageUrl": "https://via.placeholder.com/96/12aaee/000000.png",
+    "sectionColor": "#ee3c32"
+},{
+    "sectionId": 4,
+    "sectionName": "Section 4D",
+    "sectionSubName": "Раздел 4D",
+    "sectionImageUrl": "https://via.placeholder.com/96/8800aa/000000.png",
+    "sectionColor": "#d4ceac"
+},{
+    "sectionId": 5,
+    "sectionName": "Section 5E",
+    "sectionSubName": "Раздел 5E",
+    "sectionImageUrl": "https://via.placeholder.com/96/FFFFcc/000000.png",
+    "sectionColor": "#451eaa"
+},{
+    "sectionId": 6,
+    "sectionName": "Section 6F",
+    "sectionSubName": "Раздел 6F",
+    "sectionImageUrl": "https://via.placeholder.com/96/ccaabe/000000.png",
+    "sectionColor": "#bcaabd"
+},{
+    "sectionId": 7,
+    "sectionName": "Section 7G",
+    "sectionSubName": "Раздел 7G",
+    "sectionImageUrl": "https://via.placeholder.com/96/12ddee/000000.png",
+    "sectionColor": "#aa3c32"
+},{
+    "sectionId": 8,
+    "sectionName": "Section 8H",
+    "sectionSubName": "Раздел 8H",
+    "sectionImageUrl": "https://via.placeholder.com/96/2200aa/000000.png",
+    "sectionColor": "#daaeac"
+}]
