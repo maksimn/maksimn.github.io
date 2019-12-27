@@ -1,4 +1,4 @@
-﻿[{
+[{
     "section": {
     	"id": 1,
 		"name": "Избранная двадцатка",
@@ -35,7 +35,7 @@
 		"color": "#769ae8",
 		"tracks": [
             {"name":"Амурские волны","url":"http://www.sovmusic.ru/m32/amurskie.mp3","duration":"03:48","id":2000001,"year":0},
-            {"name":"Бой кремлевских курантов","url":"http://www.sovmusic.ru/m32/kuranty.mp3","duration":"00:35","id":2000002,"year":0},
+            {"name":"Бой кремлевских курантов","url":"http://www.sovmusic.ru/m32/kuranty.mp3","duration":"1:04","id":2000002,"year":0},
             {"name":"В защиту мира","url":"http://www.sovmusic.ru/m32/vzashitu.mp3","duration":"02:44","id":2000003,"year":0},
             {"name":"В предгорьях Алтая","url":"http://www.sovmusic.ru/m32/altay.mp3","duration":"02:46","id":2000004,"year":0},
             {"name":"Вернулся я на Родину","url":"http://www.sovmusic.ru/m32/vernulsa.mp3","duration":"03:23","id":2000005,"year":0},
