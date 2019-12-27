@@ -31,8 +31,8 @@
     "section": {
     	"id": 2,
 		"name": "Песни о Родине",
-		"picture_url": "",
-		"color": "#aaaaaa",
+		"picture_url": "http://maksimn.github.io/musicofussr/images/msu_build192.jpg",
+		"color": "#769ae8",
 		"tracks": [
             {"name":"Амурские волны","url":"http://www.sovmusic.ru/m32/amurskie.mp3","duration":"03:48","id":2000001,"year":0},
             {"name":"Бой кремлевских курантов","url":"http://www.sovmusic.ru/m32/kuranty.mp3","duration":"00:35","id":2000002,"year":0},
@@ -107,8 +107,8 @@
     "section": {
     	"id": 3,
 		"name": "О любви и не только",
-		"picture_url": "http://maksimn.github.io/musicofussr/images/odingarm.jpg",
-		"color": "#757a6e",
+		"picture_url": "http://maksimn.github.io/musicofussr/images/about_love192.jpg",
+		"color": "#7fc9ca",
 		"tracks": [
             {"name":"Ай да парень","url":"http://www.sovmusic.ru/m32/aidapare.mp3","duration":"02:13","id":3000001,"year":0},
             {"name":"Антоновки висят","url":"http://www.sovmusic.ru/m32/antonovk.mp3","duration":"02:22","id":3000002,"year":0},
