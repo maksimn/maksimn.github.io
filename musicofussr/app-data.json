@@ -305,7 +305,8 @@
 			{"id": 104,"name": "Соловьи","url": "http://www.sovmusic.ru/sam/s12897.mp3","duration": "6:39","year": 0},
 			{"id": 105,"name": "Салют Москвы","url": "http://www.sovmusic.ru/m32/salute.mp3","duration": "4:28","year": 0},
 			{"id": 106,"name": "Вечер на рейде","url": "http://www.sovmusic.ru/sam/s14448.mp3","duration": "6:30","year": 0},
-			{"id": 107,"name": "В лесу прифронтовом","url": "http://www.sovmusic.ru/m32/v_lesu.mp3","duration": "3:04","year": 0}
+            {"id": 107,"name": "В лесу прифронтовом","url": "http://www.sovmusic.ru/m32/v_lesu.mp3","duration": "3:04","year": 0},
+            {"id": 6000000,"name": "Стальная эскадрилья","url": "http://www.sovmusic.ru/m32/stalnaya.mp3","duration": "2:16","year": 0}
 		]
     }
 },{
@@ -335,7 +336,8 @@
 			{"id": 403,"name": "Варшавянка","url": "http://www.sovmusic.ru/m32/varshav.mp3","duration": "1:52","year": 0},
 			{"id": 404,"name": "Смело, товарищи, в ногу","url": "http://www.sovmusic.ru/m32/vnogu.mp3","duration": "2:05","year": 0},
 			{"id": 405,"name": "По долинам и по взгорьям","url": "http://www.sovmusic.ru/m32/pdolinam.mp3","duration": "2:22","year": 0},
-			{"id": 406,"name": "Песня о Щорсе","url": "http://www.sovmusic.ru/m32/pesnya22.mp3","duration": "3:46","year": 0}
+            {"id": 406,"name": "Песня о Щорсе","url": "http://www.sovmusic.ru/m32/pesnya22.mp3","duration": "3:46","year": 0},
+            {"id": 407,"name": "Гимн Коминтерна","url": "http://www.sovmusic.ru/sam/s15345.mp3","duration": "3:56","year": 0}
 		]
     }
 }]
