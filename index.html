@@ -1,15 +1,307 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Максим Иванов - iOS Developer</title>
+  <script>
+    window.onload = function() {
+      var span = document.getElementById("time-interval")
+      span.textContent = timeIntervalSpanText()
+    }
+
+    function monthDiff(d1, d2) {
+      var months;
+      months = (d2.getFullYear() - d1.getFullYear()) * 12;
+      months -= d1.getMonth();
+      months += d2.getMonth();
+      return months <= 0 ? 0 : months;
+    }
+
+    function timeIntervalSpanText() {
+      let today = new Date()
+      let beginning = new Date("2019-02-18")
+      let inMonths = monthDiff(beginning, today)
+      let years = Math.trunc(inMonths / 12)
+      let months = inMonths % 12
+
+      return yearsToText(years) + monthsToText(months)
+    }
+
+    function yearsToText(years) {
+      if (years > 4) {
+        return years + " лет"
+      }
+      return years + " года"
+    }
+
+    function monthsToText(months) {
+      if (months == 0) {
+        return ""
+      } else if (months == 1) {
+        return " 1 месяц"
+      } else if (months > 1 && months < 5) {
+        return " " + months + " месяца"
+      }
+
+      return " " + months + " месяцев"
+    }
+  </script>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    
+    .column1 {
+      float: left;
+      width: 200pt;
+    }
+    .column1 img {
+      margin-left: 36pt; 
+      margin-top: 10pt;
+    }
+    .column2 {
+      float: left;
+    }
+    .column2 p:first-child {
+      margin-left: 70pt; margin-top: 30pt;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
 <body>
-    <h1>Maxim Ivanov</h1>
-<p>Software developer, mobile games developer.</p>
-<h2>Contacts</h2>
-<p>Telegram: @maksimiv</p>
-<p><a target="_blank" href="https://www.facebook.com/maksim.ivanov.7902">Facebook</a></p>
+<div class="row">
+  <div style="float: right; width: 100pt;">
+    <img src="images/avatar96x96.jpg" />
+  </div>
+  <div>
+    <h2 id="максим-иванов">Максим Иванов</h2>
+    <h3 id="ios-developer">iOS Developer</h3>
+    <p>Делаю приложения для iPhone/iPad с февраля 2019 г. (<span id="time-interval"></span>)</p>
+  </div>
+</div>
+<h3 id="мои-приложения-в-app-store">Мои приложения в App Store:</h3>
+<h3 id="v-knife.">1. V-knife.</h3>
+<div class="row">
+  <div class="column1">
+    <img src="images/v-knife-icon150x150.png" />
+  </div>
+  <div class="column2">
+    <p><a target="_blank" href="https://apps.apple.com/app/id1535885535"><img src="images/app-store-ru.png" /></a></p>
+    <p><strong>Категория:</strong> Игры, казуальные.</p>
+  </div>
+</div>
+<p>Игра, заключающаяся в подбрасывании ножика. Приложение имеет 6 экранов (<em>Главный экран</em>, <em>Игра</em>, <em>Настройки</em>, <em>Правила</em>, <em>Магазин</em>, <em>Экран покупки игрового предмета</em>).</p>
+<p><strong>Реализованные задачи:</strong></p>
+<ul>
+<li>Дизайн и верстка UI всех экранов.</li>
+<li>Реализация физического движка, звукового движка (<code>AVFoundation</code>).</li>
+<li>Реализация игровой логики, игровых объектов и карт.</li>
+<li>Интеграция с рекламными сервисами Google.</li>
+<li>Магазин игровых предметов, покупки в приложении (In-app purchases).</li>
+<li>Подключение крэшлитики и аналитики (Firebase).</li>
+<li>Публикация и развертывание приложения в App Store.</li>
+</ul>
+<h3 id="сбербанк-онлайн.">2. СберБанк Онлайн.</h3>
+<div class="row">
+  <div class="column1">
+    <img src="images/sbol-icon150x150.png" />
+  </div>
+  <div class="column2">
+    <p><a target="_blank" href="https://apps.apple.com/app/id492224193"><img src="images/app-store-ru.png" /></a></p>
+    <p style="margin-left: 35pt;"><strong>Категория:</strong> Финансы.</p>
+  </div>
+</div>
+<p>В супераппе “СберБанк Онлайн” занимался разработкой продуктов “Кредитная история”, “Уведомления по кредитной истории” (<em>Главный экран</em> -&gt; <em>Кредиты</em> -&gt; <em>Рассчитать и взять кредит</em> -&gt; <em>Кредиты, Дополнительные услуги</em>).</p>
+<p><strong>Реализованные задачи:</strong></p>
+<ul>
+<li>Закрытие технического долга по продукту “Кредитная история”. Написание юнит-тестов для бизнес-логики Кредитной истории.</li>
+<li>Реализация нативных автоматических UI тестов для сценариев использования Кредитной истории.</li>
+<li>Реализация точки входа в Уведомления по кредитной истории, Главного экрана, Промо экрана УКИ.</li>
+</ul>
+<h3 id="ios-приложения-с-открытым-исходным-кодом">iOS-приложения с открытым исходным кодом</h3>
+<h3 id="personal-dictionary">3. Personal Dictionary</h3>
+<div class="row">
+  <div class="column1">
+    <img src="images/pd-icon150x150.png" />
+  </div>
+  <div class="column2">
+    <p><a target="_blank" href="https://github.com/maksimn/personal-dictionary-ios">Проект на Github</a></p>
+    <p style="margin-left: 40pt;"><strong>Категория:</strong> Образование.</p>
+  </div>
+</div>
+<p>Приложение, в котором пользователь может составить личный список незнакомых иностранных слов.</p>
+<p><strong>Реализованные задачи:</strong></p>
+<ul>
+<li>Верстка трех экранов из кода.</li>
+<li>Применение архитектурного подхода <code>MVVM + Router + Builder</code>. Реализация слабой связанности компонентов, внедрения зависимостей.</li>
+<li>Локальное кэширование данных (Core Data)</li>
+<li>Взаимодействие по сети со сторонними сервисами для перевода (PONS Online Dictionary API).</li>
+<li>Написание юнит-тестов, использование моков Cuckoo на Swift.</li>
+</ul>
+<p>Другие примеры моего кода можно также найти на <a target="_blank" href="https://github.com/maksimn?tab=repositories">Github</a>.</p>
+<h3 id="мои-знания-и-навыки">Мои знания и навыки</h3>
+<ul>
+<li>Языки программирования: знание Objective-C, Swift, JavaScript.</li>
+<li>Знание iOS SDK, UIKit.</li>
+<li>Знание юнит-тестирования.</li>
+<li>Опыт написания автоматических UI тестов (Earl Grey).</li>
+<li>Методологии разработки: знание TDD.</li>
+<li>Знание HTML, CSS, React, Node.js.</li>
+<li>Базовые знания SQL и баз данных (реляционных и NoSQL - MongoDB).</li>
+<li>Знание принципов ООП, основных паттернов проектирования, MVP, MVVM, VIPER, UDF / Redux, Dependency Injection.</li>
+<li>Опыт работы в команде по методологии Scrum / Agile.</li>
+<li>Умение использовать систему контроля версий git.</li>
+<li>Опыт настройки Continuous Integration.</li>
+<li>Знание английского языка.</li>
+<li>Опыт публикации проектов в магазинах приложений (App Store и Google Play).</li>
+</ul>
+<h3 id="контакты">Контакты</h3>
+<p>Email: mmaksmn@gmail.com</p>
+<p>Telegram: <span class="citation" data-cites="maksimiv">@maksimiv</span></p>
+<p><a href="https://www.facebook.com/maksim.ivanov.7902">Facebook</a></p>
 </body>
 </html>
