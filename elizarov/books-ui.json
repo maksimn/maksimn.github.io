@@ -1,0 +1,173 @@
+{
+    "templates": {
+        "bookCard": {
+            "type": "container",
+            "items": [
+                {
+                    "type": "text",
+                    "font_size": 21,
+                    "font_weight": "bold",
+                    "margins": {
+                        "bottom": 16
+                    },
+                    "$text": "title"
+                }
+            ],
+            "margins": {
+                "bottom": 6
+            },
+            "orientation": "vertical",
+            "paddings": {
+                "top": 10,
+                "bottom": 0,
+                "left": 30,
+                "right": 30
+            }
+        }
+    },
+    "cards": [{
+        "log_id": "book_card0",
+        "states": [
+            {
+                "state_id": 0,
+                "div": {
+                    "type": "container",
+                    "items": [
+                        {
+                            "type": "bookCard",
+                            "title": "Ногти"
+                        }
+                    ]
+                }
+            }
+        ]
+    },{
+        "log_id": "book_card1",
+        "states": [
+            {
+                "state_id": 0,
+                "div": {
+                    "type": "container",
+                    "items": [
+                        {
+                            "type": "bookCard",
+                            "title": "Pasternak"
+                        }
+                    ]
+                }
+            }
+        ]
+    },{
+        "log_id": "book_card2",
+        "states": [
+            {
+                "state_id": 0,
+                "div": {
+                    "type": "container",
+                    "items": [
+                        {
+                            "type": "bookCard",
+                            "title": "Красная плёнка"
+                        }
+                    ]
+                }
+            }
+        ]
+    },{
+        "log_id": "book_card3",
+        "states": [
+            {
+                "state_id": 0,
+                "div": {
+                    "type": "container",
+                    "items": [
+                        {
+                            "type": "bookCard",
+                            "title": "Библиотекарь"
+                        }
+                    ]
+                }
+            }
+        ]
+    },{
+        "log_id": "book_card4",
+        "states": [
+            {
+                "state_id": 0,
+                "div": {
+                    "type": "container",
+                    "items": [
+                        {
+                            "type": "bookCard",
+                            "title": "Кубики"
+                        }
+                    ]
+                }
+            }
+        ]
+    },{
+        "log_id": "book_card5",
+        "states": [
+            {
+                "state_id": 0,
+                "div": {
+                    "type": "container",
+                    "items": [
+                        {
+                            "type": "bookCard",
+                            "title": "Мультики"
+                        }
+                    ]
+                }
+            }
+        ]
+    },{
+        "log_id": "book_card6",
+        "states": [
+            {
+                "state_id": 0,
+                "div": {
+                    "type": "container",
+                    "items": [
+                        {
+                            "type": "bookCard",
+                            "title": "Бураттини. Фашизм прошёл"
+                        }
+                    ]
+                }
+            }
+        ]
+    },{
+        "log_id": "book_card7",
+        "states": [
+            {
+                "state_id": 0,
+                "div": {
+                    "type": "container",
+                    "items": [
+                        {
+                            "type": "bookCard",
+                            "title": "Мы вышли покурить на 17 лет..."
+                        }
+                    ]
+                }
+            }
+        ]
+    },{
+        "log_id": "book_card8",
+        "states": [
+            {
+                "state_id": 0,
+                "div": {
+                    "type": "container",
+                    "items": [
+                        {
+                            "type": "bookCard",
+                            "title": "Земля"
+                        }
+                    ]
+                }
+            }
+        ]
+    }]
+}
