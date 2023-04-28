@@ -1,0 +1,131 @@
+{
+  "templates": {
+    "bookDetails": {
+      "type": "container",
+      "orientation": "vertical",
+      "background": [
+        {
+          "type": "solid",
+          "$color": "background_color"
+        }
+      ],
+      "items": [
+        {
+          "type": "container",
+          "orientation": "horizontal",
+          "height": {
+            "type": "fixed",
+            "value": 260
+          },
+          "items": [
+            {
+              "type": "image",
+              "$image_url": "image_url",
+              "width": {
+                "type": "fixed",
+                "value": 160
+              },
+              "height": {
+                "type": "fixed",
+                "value": 260
+              },
+              "margins": {
+                "left": 10
+              }
+            },
+            {
+              "type": "container",
+              "orientation": "vertical",
+              "height": {
+                "type": "match_parent"
+              },
+              "items": [
+                {
+                  "type": "text",
+                  "font_size": 18,
+                  "font_weight": "bold",
+                  "$text": "title",
+                  "$text_color": "text_color",
+                  "margins": {
+                    "top": 12,
+                    "left": 12,
+                    "right": 16
+                  }
+                },
+                {
+                  "type": "text",
+                  "font_size": 16,
+                  "$text": "book_type",
+                  "$text_color": "text_color",
+                  "margins": {
+                    "top": 8,
+                    "left": 12,
+                    "right": 16
+                  }
+                },
+                {
+                  "type": "container",
+                  "orientation": "overlap",
+                  "height": {
+                    "type": "match_parent"
+                  },
+                  "items": [
+                    {
+                      "type": "text",
+                      "alignment_vertical": "bottom",
+                      "alignment_horizontal": "left",
+                      "font_size": 16,
+                      "$text": "year",
+                      "$text_color": "text_color",
+                      "margins": {
+                        "left": 13,
+                        "bottom": 4
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "font_size": 16,
+          "$text": "description",
+          "$text_color": "text_color",
+          "margins": {
+            "top": 14,
+            "left": 30,
+            "right": 30,
+            "bottom": 17
+          }
+        }
+      ]
+    }
+  },
+  "cards": [
+    {
+      "log_id": "bookdetails_card",
+      "states": [
+        {
+          "state_id": 0,
+          "div": {
+            "type": "container",
+            "items": [
+              {
+                "type": "bookDetails",
+                "title": "Бураттини. Фашизм прошёл",
+                "book_type": "Эссе",
+                "year": "2011",
+                "background_color": "#c2a6a7",
+                "text_color": "#222",
+                "image_url": "https://s1.livelib.ru/boocover/1000488263/o/ea9b/Mihail_Elizarov__Burattini._Fashizm_proshel.jpeg",
+                "description": "\"Было бы ошибкой воспринимать \"Бураттини\" как эссеистику в чистом виде. Перед вами, скорее, монологи персонажей из ненаписанного романа. Герои язвят и философствуют, потом совершают какие-нибудь абсурдные, провокационные поступки - в обычном романе это называется сюжетом. Поступки, собственно, остались \"за кадром\", поэтому читателю предлагается совершать их самостоятельно, по мере прочтения\". (Михаил Елизаров)\n\n\"Буратино - неунывающий деревянный организм, лидер и оратор, человек действия, циник, презирающий образование и декадентство. Для него не существует женщины, и при этом он - воплощение потентности. Вечно эрегированный нос Буратино - символ его мужской состоятельности. Буратино смел, весел, беспринципен и при этом - неистребимо обаятелен\"."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

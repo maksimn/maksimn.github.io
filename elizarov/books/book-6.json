@@ -1,0 +1,131 @@
+{
+  "templates": {
+    "bookDetails": {
+      "type": "container",
+      "orientation": "vertical",
+      "background": [
+        {
+          "type": "solid",
+          "$color": "background_color"
+        }
+      ],
+      "items": [
+        {
+          "type": "container",
+          "orientation": "horizontal",
+          "height": {
+            "type": "fixed",
+            "value": 260
+          },
+          "items": [
+            {
+              "type": "image",
+              "$image_url": "image_url",
+              "width": {
+                "type": "fixed",
+                "value": 160
+              },
+              "height": {
+                "type": "fixed",
+                "value": 260
+              },
+              "margins": {
+                "left": 10
+              }
+            },
+            {
+              "type": "container",
+              "orientation": "vertical",
+              "height": {
+                "type": "match_parent"
+              },
+              "items": [
+                {
+                  "type": "text",
+                  "font_size": 18,
+                  "font_weight": "bold",
+                  "$text": "title",
+                  "$text_color": "text_color",
+                  "margins": {
+                    "top": 12,
+                    "left": 12,
+                    "right": 16
+                  }
+                },
+                {
+                  "type": "text",
+                  "font_size": 16,
+                  "$text": "book_type",
+                  "$text_color": "text_color",
+                  "margins": {
+                    "top": 8,
+                    "left": 12,
+                    "right": 16
+                  }
+                },
+                {
+                  "type": "container",
+                  "orientation": "overlap",
+                  "height": {
+                    "type": "match_parent"
+                  },
+                  "items": [
+                    {
+                      "type": "text",
+                      "alignment_vertical": "bottom",
+                      "alignment_horizontal": "left",
+                      "font_size": 16,
+                      "$text": "year",
+                      "$text_color": "text_color",
+                      "margins": {
+                        "left": 13,
+                        "bottom": 4
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "font_size": 16,
+          "$text": "description",
+          "$text_color": "text_color",
+          "margins": {
+            "top": 14,
+            "left": 30,
+            "right": 30,
+            "bottom": 17
+          }
+        }
+      ]
+    }
+  },
+  "cards": [
+    {
+      "log_id": "bookdetails_card",
+      "states": [
+        {
+          "state_id": 0,
+          "div": {
+            "type": "container",
+            "items": [
+              {
+                "type": "bookDetails",
+                "title": "Мультики",
+                "book_type": "Роман",
+                "year": "2010",
+                "background_color": "#7e654d",
+                "text_color": "#fff",
+                "image_url": "https://i.livelib.ru/boocover/1001093871/200/ec9a/Mihail_Elizarov__Multiki.jpg",
+                "description": "В начале девяностых годов прошлого века обычный российский школьник по имени Герман Рымбаев попал под влияние дурной компании. Его жизнь превратилась в череду распутства, беззакония и надругательства над моральными принципами. Вместе с друзьями мальчик, получивший прозвище Рэмбо, проводит дни, прогуливая школу, напиваясь за гаражами, совращая одноклассниц, шантажируя и угрожая честным гражданам с целью заработать немного денег, чтобы приобрести чудеса техники вроде кассетных магнитофонов и электронных часов.\n\nВеселая и беззаботная жизнь Германа-Рэмбо обрывается в одночасье, когда он оказывается в детской комнате милиции. Там он знакомится со странным человеком, называющим себя… Разумом Аркадьевичем. Когда-то его звали Алеша Разумовский, но, как и Герман, он пошел по преступной стезе, которая в итоге привела его к жестокому убийству троих мальчишек.\n\nАлеше повезло: в его жизни тогда появился наставник, который помог малолетнему преступнику встать на путь добродетели. С тех пор Алеша звал себя не иначе как Разум и поклялся защищать тех, кто сбился с пути. Вот только методы он выбрал слегка... пугающие."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

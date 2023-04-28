@@ -1,0 +1,131 @@
+{
+  "templates": {
+    "bookDetails": {
+      "type": "container",
+      "orientation": "vertical",
+      "background": [
+        {
+          "type": "solid",
+          "$color": "background_color"
+        }
+      ],
+      "items": [
+        {
+          "type": "container",
+          "orientation": "horizontal",
+          "height": {
+            "type": "fixed",
+            "value": 260
+          },
+          "items": [
+            {
+              "type": "image",
+              "$image_url": "image_url",
+              "width": {
+                "type": "fixed",
+                "value": 160
+              },
+              "height": {
+                "type": "fixed",
+                "value": 260
+              },
+              "margins": {
+                "left": 10
+              }
+            },
+            {
+              "type": "container",
+              "orientation": "vertical",
+              "height": {
+                "type": "match_parent"
+              },
+              "items": [
+                {
+                  "type": "text",
+                  "font_size": 18,
+                  "font_weight": "bold",
+                  "$text": "title",
+                  "$text_color": "text_color",
+                  "margins": {
+                    "top": 12,
+                    "left": 12,
+                    "right": 16
+                  }
+                },
+                {
+                  "type": "text",
+                  "font_size": 16,
+                  "$text": "book_type",
+                  "$text_color": "text_color",
+                  "margins": {
+                    "top": 8,
+                    "left": 12,
+                    "right": 16
+                  }
+                },
+                {
+                  "type": "container",
+                  "orientation": "overlap",
+                  "height": {
+                    "type": "match_parent"
+                  },
+                  "items": [
+                    {
+                      "type": "text",
+                      "alignment_vertical": "bottom",
+                      "alignment_horizontal": "left",
+                      "font_size": 16,
+                      "$text": "year",
+                      "$text_color": "text_color",
+                      "margins": {
+                        "left": 13,
+                        "bottom": 4
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "font_size": 16,
+          "$text": "description",
+          "$text_color": "text_color",
+          "margins": {
+            "top": 14,
+            "left": 30,
+            "right": 30,
+            "bottom": 17
+          }
+        }
+      ]
+    }
+  },
+  "cards": [
+    {
+      "log_id": "bookdetails_card",
+      "states": [
+        {
+          "state_id": 0,
+          "div": {
+            "type": "container",
+            "items": [
+              {
+                "type": "bookDetails",
+                "title": "Pasternak",
+                "book_type": "Роман",
+                "year": "2003",
+                "background_color": "#746452",
+                "text_color": "#fff",
+                "image_url": "https://i.livelib.ru/boocover/1000315110/200/b139/Mihail_Elizarov__Pasternak.jpg",
+                "description": "Роман \"Pasternak\" состоит из битв и философских диспутов, его называют интеллектуальным триллером, православным боевиком с элементами достоевщины и тарантиновщины. Поэт Пастернак предстаёт здесь гигантским демоном, порождением зла, захватывающим умы русской интеллигенции, а борьба с ним ведётся не словом, но оружием.\n\n\"Льнов видит косо воткнутый в землю электростолб. Провода, точно стальные тросы, удерживают его, этим он похож на крест соборного купола. На перекладине неподвижно сидит огромное существо. Оно распахивает рваной формы крылья. Перепончатая их изнанка лунно-белёсого цвета и покрыта надписями. Гигантский конский череп ещё носит искажённые человеческие черты мёртвого поэта. Глаза его горят бледным гнилостным свечением. Чёрная слизь струится с крыльев, но не капает на землю, оставаясь внутри сущности, словно это не демоническая плоть сочится, а ветер колеблет мазутный шёлк мантии на птичьих плечах трупа.\n\nЛьнов пытается прочесть надписи на крыльях, слышит голос священника: \"Не читай дактиль на этих птерах!\""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
